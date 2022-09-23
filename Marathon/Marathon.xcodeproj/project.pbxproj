@@ -1,0 +1,1119 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07D25AAB4460981B1357CF7F /* MarathonUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00D1103DBB7DB299FD2E577C /* MarathonUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B4A2658274E6C2D77E6CFE9 /* TuistBundle+Marathon.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC6BE827124C889DDBCC2DD /* TuistBundle+Marathon.swift */; };
+		231DFAA55ACC23F45183B29F /* MarathonUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D1103DBB7DB299FD2E577C /* MarathonUI.framework */; };
+		3DB21E30F4AF864473B6FDA7 /* MarathonKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF40FD2888FFB06E8A192BC7 /* MarathonKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5CBFEA949FCE158D227E669E /* MarathonUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F180BF3BB041F3AE123605A2 /* MarathonUI.swift */; };
+		6FA180E4EC786ACBF2A44824 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9F7EA3E023B1B1226AD282E /* LaunchScreen.storyboard */; };
+		6FD1232575B2AD737E79729D /* MarathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239291A91C8253F12B3D9FA1 /* MarathonUITests.swift */; };
+		7D6930073407384255E09350 /* MarathonKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF40FD2888FFB06E8A192BC7 /* MarathonKit.framework */; };
+		89ABB61FA755038CBC97E6A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C9F882C67A6643E3A2B3BC /* AppDelegate.swift */; };
+		8BF68BDBD6334738E22B4713 /* MarathonKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAAEF6AD54D309EA47765F3 /* MarathonKitTests.swift */; };
+		B641D5E6C1FDEF8174162DE0 /* MarathonUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D1103DBB7DB299FD2E577C /* MarathonUI.framework */; };
+		C04C7C86D4EB56FCAF9C2F29 /* MarathonKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF40FD2888FFB06E8A192BC7 /* MarathonKit.framework */; };
+		DE5AE9B4E8FAD1FAA5F39E6B /* MarathonKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878E587E2AFE08C39D9E069 /* MarathonKit.swift */; };
+		F89B50647C3BEF0ADDBD7169 /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEAE2F31B7A0DCCBEEA55A2 /* AppTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7DF55CDF73816E94CC9F21FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAC8BB93626DD3373E9E7766 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 321A3C26A23EFE81D9846BC5;
+			remoteInfo = MarathonKit;
+		};
+		80634887B499A8B701977859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAC8BB93626DD3373E9E7766 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 321A3C26A23EFE81D9846BC5;
+			remoteInfo = MarathonKit;
+		};
+		8AB49F6A59DCFED86B907CE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAC8BB93626DD3373E9E7766 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89E652F173DCCC6FEB2FA418;
+			remoteInfo = MarathonUI;
+		};
+		93B21DC27A1A5861A7382BCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAC8BB93626DD3373E9E7766 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89E652F173DCCC6FEB2FA418;
+			remoteInfo = MarathonUI;
+		};
+		D7AB1D049A5E46DB6B07222D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAC8BB93626DD3373E9E7766 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC9B6316E76FCC8B5D5DEC69;
+			remoteInfo = Marathon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3119E95257C13B6D07E25976 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3654C77148BA2742E3E7689E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49105E94BEE24A042F654EF0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9C8AF9E4F1912436D9D9EE2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3DB21E30F4AF864473B6FDA7 /* MarathonKit.framework in Embed Frameworks */,
+				07D25AAB4460981B1357CF7F /* MarathonUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAB87A6A8F95154971BD9278 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C70DFF783483C7AE0ED286A8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00D1103DBB7DB299FD2E577C /* MarathonUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MarathonUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04D63E78EED15F2682547132 /* MarathonUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MarathonUI-Info.plist"; sourceTree = "<group>"; };
+		0FE62B333793D58C9717BB35 /* Marathon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Marathon-Info.plist"; sourceTree = "<group>"; };
+		239291A91C8253F12B3D9FA1 /* MarathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarathonUITests.swift; sourceTree = "<group>"; };
+		3CAAEF6AD54D309EA47765F3 /* MarathonKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarathonKitTests.swift; sourceTree = "<group>"; };
+		4878E587E2AFE08C39D9E069 /* MarathonKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarathonKit.swift; sourceTree = "<group>"; };
+		49D71030CBE3FB613548229B /* MarathonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarathonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CBEA9A5F6AE8D344D4A7E79 /* MarathonKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarathonKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		629DABA0D3828471DBAF69C5 /* Marathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DEAE2F31B7A0DCCBEEA55A2 /* AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTests.swift; sourceTree = "<group>"; };
+		8BC725CCD43EF953B3B2743C /* MarathonKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MarathonKitTests-Info.plist"; sourceTree = "<group>"; };
+		A5C9F882C67A6643E3A2B3BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF40FD2888FFB06E8A192BC7 /* MarathonKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MarathonKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1F6B721209961EA7A12852A /* MarathonKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MarathonKit-Info.plist"; sourceTree = "<group>"; };
+		C5C6B2032EC5B1346FF01018 /* MarathonUITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MarathonUITests-Info.plist"; sourceTree = "<group>"; };
+		C9F086FED70C8144E97FB2E7 /* MarathonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarathonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECC6BE827124C889DDBCC2DD /* TuistBundle+Marathon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+Marathon.swift"; sourceTree = "<group>"; };
+		F180BF3BB041F3AE123605A2 /* MarathonUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarathonUI.swift; sourceTree = "<group>"; };
+		F218EBA2866028CC7F46542A /* MarathonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MarathonTests-Info.plist"; sourceTree = "<group>"; };
+		F9F7EA3E023B1B1226AD282E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		123D44C28EA48AF500C20CA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				231DFAA55ACC23F45183B29F /* MarathonUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B3D44CCEBAE1CE1BB5364E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF28444CAEE57ACA74D5888 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D6930073407384255E09350 /* MarathonKit.framework in Frameworks */,
+				B641D5E6C1FDEF8174162DE0 /* MarathonUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76CC1C8E0B343DA83B7D005E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C04C7C86D4EB56FCAF9C2F29 /* MarathonKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A037C606BDA7CFC4D1AFFD4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D394983C61BF40C7AB0F8788 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		004198F4DDE42A82FBAE0841 /* MarathonKit */ = {
+			isa = PBXGroup;
+			children = (
+				FBD2D454858063144FF612DB /* Sources */,
+				58B8DE66D4D977B2DE4AAE9F /* Tests */,
+			);
+			path = MarathonKit;
+			sourceTree = "<group>";
+		};
+		077626EADA3A1FDBF216179A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A5C9F882C67A6643E3A2B3BC /* AppDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		19B2CFE0FEBE2CE6A89BD334 /* Derived */ = {
+			isa = PBXGroup;
+			children = (
+				7D4008129B5C1FF31A5A2071 /* InfoPlists */,
+				B510E94D93ADA4E5031CBD30 /* Sources */,
+			);
+			path = Derived;
+			sourceTree = "<group>";
+		};
+		3C42DDE53B109569274F0E9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				629DABA0D3828471DBAF69C5 /* Marathon.app */,
+				BF40FD2888FFB06E8A192BC7 /* MarathonKit.framework */,
+				5CBEA9A5F6AE8D344D4A7E79 /* MarathonKitTests.xctest */,
+				49D71030CBE3FB613548229B /* MarathonTests.xctest */,
+				00D1103DBB7DB299FD2E577C /* MarathonUI.framework */,
+				C9F086FED70C8144E97FB2E7 /* MarathonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5182D887FBFDC1DB063A685A = {
+			isa = PBXGroup;
+			children = (
+				81A5D58E61B2D09F6A60B9CF /* Project */,
+				F5983A4611BAF515F3005E2F /* Frameworks */,
+				3C42DDE53B109569274F0E9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58228A50C87BEF334B3C28A5 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				239291A91C8253F12B3D9FA1 /* MarathonUITests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		58B8DE66D4D977B2DE4AAE9F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3CAAEF6AD54D309EA47765F3 /* MarathonKitTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		7D4008129B5C1FF31A5A2071 /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				0FE62B333793D58C9717BB35 /* Marathon-Info.plist */,
+				C1F6B721209961EA7A12852A /* MarathonKit-Info.plist */,
+				8BC725CCD43EF953B3B2743C /* MarathonKitTests-Info.plist */,
+				F218EBA2866028CC7F46542A /* MarathonTests-Info.plist */,
+				04D63E78EED15F2682547132 /* MarathonUI-Info.plist */,
+				C5C6B2032EC5B1346FF01018 /* MarathonUITests-Info.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		81A5D58E61B2D09F6A60B9CF /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				19B2CFE0FEBE2CE6A89BD334 /* Derived */,
+				98A73C0F4D1372D092FA305F /* Targets */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		8BBA7FE499FCD072FB24FD19 /* Marathon */ = {
+			isa = PBXGroup;
+			children = (
+				AFEE2DE22068BD840ED47E3D /* Resources */,
+				077626EADA3A1FDBF216179A /* Sources */,
+				B6E8EF095CBC243A11249A72 /* Tests */,
+			);
+			path = Marathon;
+			sourceTree = "<group>";
+		};
+		98A73C0F4D1372D092FA305F /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				8BBA7FE499FCD072FB24FD19 /* Marathon */,
+				004198F4DDE42A82FBAE0841 /* MarathonKit */,
+				BDD7CC1D451E5CD35BC44A7D /* MarathonUI */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		AFEE2DE22068BD840ED47E3D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F9F7EA3E023B1B1226AD282E /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B510E94D93ADA4E5031CBD30 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				ECC6BE827124C889DDBCC2DD /* TuistBundle+Marathon.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B6E8EF095CBC243A11249A72 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6DEAE2F31B7A0DCCBEEA55A2 /* AppTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		BDD7CC1D451E5CD35BC44A7D /* MarathonUI */ = {
+			isa = PBXGroup;
+			children = (
+				E27BEE233616CCF2593B3AD0 /* Sources */,
+				58228A50C87BEF334B3C28A5 /* Tests */,
+			);
+			path = MarathonUI;
+			sourceTree = "<group>";
+		};
+		E27BEE233616CCF2593B3AD0 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F180BF3BB041F3AE123605A2 /* MarathonUI.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F5983A4611BAF515F3005E2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBD2D454858063144FF612DB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4878E587E2AFE08C39D9E069 /* MarathonKit.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		321A3C26A23EFE81D9846BC5 /* MarathonKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71B7194AF64702470D5C0228 /* Build configuration list for PBXNativeTarget "MarathonKit" */;
+			buildPhases = (
+				CBAFAEDE3E83DA26ACDF9ABA /* Sources */,
+				96940A72EE56DEDEA922D914 /* Resources */,
+				BAB87A6A8F95154971BD9278 /* Embed Frameworks */,
+				D394983C61BF40C7AB0F8788 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarathonKit;
+			productName = MarathonKit;
+			productReference = BF40FD2888FFB06E8A192BC7 /* MarathonKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		46D911A70F235234DADB753C /* MarathonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D70133CEF70E0E3D73B5EBE6 /* Build configuration list for PBXNativeTarget "MarathonUITests" */;
+			buildPhases = (
+				8BA7E5F2E248AD80A756CB81 /* Sources */,
+				274075DFC6D075247067A6ED /* Resources */,
+				3119E95257C13B6D07E25976 /* Embed Frameworks */,
+				123D44C28EA48AF500C20CA2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB7F47C6D9890C2F5360DA99 /* PBXTargetDependency */,
+			);
+			name = MarathonUITests;
+			productName = MarathonUITests;
+			productReference = C9F086FED70C8144E97FB2E7 /* MarathonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		89E652F173DCCC6FEB2FA418 /* MarathonUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86D14AC51B94CDF21BBE9527 /* Build configuration list for PBXNativeTarget "MarathonUI" */;
+			buildPhases = (
+				F9746BEE111A9C0EBB3F12D0 /* Sources */,
+				723464EDE2172748008282A5 /* Resources */,
+				3654C77148BA2742E3E7689E /* Embed Frameworks */,
+				A037C606BDA7CFC4D1AFFD4A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarathonUI;
+			productName = MarathonUI;
+			productReference = 00D1103DBB7DB299FD2E577C /* MarathonUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		99424FC4DD7CAFD54456256B /* MarathonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7484112F53D933ED456E0FFE /* Build configuration list for PBXNativeTarget "MarathonTests" */;
+			buildPhases = (
+				5CBAAE074219B464B71878B7 /* Sources */,
+				DD9B7A6F3FE3F2C138690F0B /* Resources */,
+				49105E94BEE24A042F654EF0 /* Embed Frameworks */,
+				1B3D44CCEBAE1CE1BB5364E8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9E28F796DD1DBA85F8F7E5D /* PBXTargetDependency */,
+			);
+			name = MarathonTests;
+			productName = MarathonTests;
+			productReference = 49D71030CBE3FB613548229B /* MarathonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D77D684C02DE8BEF983CF5BD /* MarathonKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D1FFD1D01E2080BA38A3025 /* Build configuration list for PBXNativeTarget "MarathonKitTests" */;
+			buildPhases = (
+				1A0F95E2589BCEAAA004FBD3 /* Sources */,
+				F8AC5B4530F6A3048BF79EC7 /* Resources */,
+				C70DFF783483C7AE0ED286A8 /* Embed Frameworks */,
+				76CC1C8E0B343DA83B7D005E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18490BB82156825502FC5F2C /* PBXTargetDependency */,
+			);
+			name = MarathonKitTests;
+			productName = MarathonKitTests;
+			productReference = 5CBEA9A5F6AE8D344D4A7E79 /* MarathonKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC9B6316E76FCC8B5D5DEC69 /* Marathon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C1A5EB88C5B701B3A094E3B /* Build configuration list for PBXNativeTarget "Marathon" */;
+			buildPhases = (
+				4509C11EDDCAE699C15DDC2C /* Sources */,
+				64C208102A6EF09910743946 /* Resources */,
+				A9C8AF9E4F1912436D9D9EE2 /* Embed Frameworks */,
+				4DF28444CAEE57ACA74D5888 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4226690DF78438E0C732968 /* PBXTargetDependency */,
+				1D0488F9A847BB793403210B /* PBXTargetDependency */,
+			);
+			name = Marathon;
+			productName = Marathon;
+			productReference = 629DABA0D3828471DBAF69C5 /* Marathon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAC8BB93626DD3373E9E7766 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = tuist.io;
+				TargetAttributes = {
+					99424FC4DD7CAFD54456256B = {
+						TestTargetID = DC9B6316E76FCC8B5D5DEC69;
+					};
+				};
+			};
+			buildConfigurationList = 19DD549CF85E0B858357E9EC /* Build configuration list for PBXProject "Marathon" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 5182D887FBFDC1DB063A685A;
+			productRefGroup = 3C42DDE53B109569274F0E9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC9B6316E76FCC8B5D5DEC69 /* Marathon */,
+				99424FC4DD7CAFD54456256B /* MarathonTests */,
+				321A3C26A23EFE81D9846BC5 /* MarathonKit */,
+				D77D684C02DE8BEF983CF5BD /* MarathonKitTests */,
+				89E652F173DCCC6FEB2FA418 /* MarathonUI */,
+				46D911A70F235234DADB753C /* MarathonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		274075DFC6D075247067A6ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C208102A6EF09910743946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FA180E4EC786ACBF2A44824 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		723464EDE2172748008282A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96940A72EE56DEDEA922D914 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9B7A6F3FE3F2C138690F0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8AC5B4530F6A3048BF79EC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A0F95E2589BCEAAA004FBD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BF68BDBD6334738E22B4713 /* MarathonKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4509C11EDDCAE699C15DDC2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B4A2658274E6C2D77E6CFE9 /* TuistBundle+Marathon.swift in Sources */,
+				89ABB61FA755038CBC97E6A1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CBAAE074219B464B71878B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F89B50647C3BEF0ADDBD7169 /* AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BA7E5F2E248AD80A756CB81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FD1232575B2AD737E79729D /* MarathonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAFAEDE3E83DA26ACDF9ABA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5AE9B4E8FAD1FAA5F39E6B /* MarathonKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9746BEE111A9C0EBB3F12D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CBFEA949FCE158D227E669E /* MarathonUI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18490BB82156825502FC5F2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MarathonKit;
+			target = 321A3C26A23EFE81D9846BC5 /* MarathonKit */;
+			targetProxy = 7DF55CDF73816E94CC9F21FE /* PBXContainerItemProxy */;
+		};
+		1D0488F9A847BB793403210B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MarathonUI;
+			target = 89E652F173DCCC6FEB2FA418 /* MarathonUI */;
+			targetProxy = 8AB49F6A59DCFED86B907CE1 /* PBXContainerItemProxy */;
+		};
+		A4226690DF78438E0C732968 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MarathonKit;
+			target = 321A3C26A23EFE81D9846BC5 /* MarathonKit */;
+			targetProxy = 80634887B499A8B701977859 /* PBXContainerItemProxy */;
+		};
+		A9E28F796DD1DBA85F8F7E5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Marathon;
+			target = DC9B6316E76FCC8B5D5DEC69 /* Marathon */;
+			targetProxy = D7AB1D049A5E46DB6B07222D /* PBXContainerItemProxy */;
+		};
+		EB7F47C6D9890C2F5360DA99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MarathonUI;
+			target = 89E652F173DCCC6FEB2FA418 /* MarathonUI */;
+			targetProxy = 93B21DC27A1A5861A7382BCE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D050C58B6C85877DC4A7E3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Derived/InfoPlists/Marathon-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.Marathon;
+				PRODUCT_NAME = Marathon;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		165D1FDB2DC610F8FB46195D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DB6B187B5D574FA4D623031 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/MarathonUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.MarathonUI;
+				PRODUCT_NAME = MarathonUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		887EC4387FEF61504F023945 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/MarathonKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.MarathonKit;
+				PRODUCT_NAME = MarathonKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		993836386B9D7C390330DD28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/MarathonTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.MarathonTests;
+				PRODUCT_NAME = MarathonTests;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marathon.app/Marathon";
+				TEST_TARGET_NAME = Marathon;
+			};
+			name = Release;
+		};
+		A15EE0EF94822A59D6F8CF34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/MarathonKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.MarathonKit;
+				PRODUCT_NAME = MarathonKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B390083D822CDB8085E1F453 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/MarathonUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.MarathonUI;
+				PRODUCT_NAME = MarathonUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B5C4CAC66B0DB57B515B8EB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/MarathonKitTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.MarathonKitTests;
+				PRODUCT_NAME = MarathonKitTests;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D23EC86BC5242D31D842B0BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/MarathonTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.MarathonTests;
+				PRODUCT_NAME = MarathonTests;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marathon.app/Marathon";
+				TEST_TARGET_NAME = Marathon;
+			};
+			name = Debug;
+		};
+		D42FCA46A25E43FDCC124996 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/MarathonUITests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.MarathonUITests;
+				PRODUCT_NAME = MarathonUITests;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCD6245E19997494E8DC0043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/MarathonUITests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.MarathonUITests;
+				PRODUCT_NAME = MarathonUITests;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ECA96B7F487CB2C60EB3216A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Derived/InfoPlists/Marathon-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.Marathon;
+				PRODUCT_NAME = Marathon;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F6912506C4037081CD10D5A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FD7386B8E928DD13531F13C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/MarathonKitTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.MarathonKitTests;
+				PRODUCT_NAME = MarathonKitTests;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19DD549CF85E0B858357E9EC /* Build configuration list for PBXProject "Marathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6912506C4037081CD10D5A9 /* Debug */,
+				165D1FDB2DC610F8FB46195D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D1FFD1D01E2080BA38A3025 /* Build configuration list for PBXNativeTarget "MarathonKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5C4CAC66B0DB57B515B8EB3 /* Debug */,
+				FD7386B8E928DD13531F13C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71B7194AF64702470D5C0228 /* Build configuration list for PBXNativeTarget "MarathonKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				887EC4387FEF61504F023945 /* Debug */,
+				A15EE0EF94822A59D6F8CF34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7484112F53D933ED456E0FFE /* Build configuration list for PBXNativeTarget "MarathonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D23EC86BC5242D31D842B0BD /* Debug */,
+				993836386B9D7C390330DD28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C1A5EB88C5B701B3A094E3B /* Build configuration list for PBXNativeTarget "Marathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D050C58B6C85877DC4A7E3D /* Debug */,
+				ECA96B7F487CB2C60EB3216A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86D14AC51B94CDF21BBE9527 /* Build configuration list for PBXNativeTarget "MarathonUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B390083D822CDB8085E1F453 /* Debug */,
+				4DB6B187B5D574FA4D623031 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D70133CEF70E0E3D73B5EBE6 /* Build configuration list for PBXNativeTarget "MarathonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D42FCA46A25E43FDCC124996 /* Debug */,
+				DCD6245E19997494E8DC0043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAC8BB93626DD3373E9E7766 /* Project object */;
+}
