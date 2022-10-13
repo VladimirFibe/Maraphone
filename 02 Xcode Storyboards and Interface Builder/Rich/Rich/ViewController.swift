@@ -1,17 +1,11 @@
-//
-//  ViewController.swift
-//  Rich
-//
-//  Created by Vladimir Fibe on 11.10.2022.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = #colorLiteral(red: 0.370555222, green: 0.3705646992, blue: 0.3705595732, alpha: 1)
+        let image = #imageLiteral(resourceName: "diamond.png")
     }
 
 
