@@ -22,8 +22,15 @@ final class HomeViewModel: ObservableObject {
             }
             
             guard let data else { return }
-            let dataAsString = String(data: data, encoding: .utf8)
+            let dataAsString = String(data: data, encoding: .utf8) ?? ""
             print("DEBUG: \(dataAsString)")
+            
+            do {
+                let coins: [Coin] = try JSONDecoder().decode([Coin].self, from: data)
+                print("DEBUG: \(coins)")
+            } catch let error {
+                print("DEBUG: \(error.localizedDescription)")
+            }
         }.resume()
     }
 }

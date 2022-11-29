@@ -16,6 +16,7 @@
 		029AAB982935921D00E17612 /* AllCoinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029AAB972935921D00E17612 /* AllCoinsView.swift */; };
 		029AAB9A2935923000E17612 /* CoinsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029AAB992935923000E17612 /* CoinsRow.swift */; };
 		029AAB9C29359C1100E17612 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029AAB9B29359C1100E17612 /* HomeViewModel.swift */; };
+		029AAB9E2935A18600E17612 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029AAB9D2935A18600E17612 /* Coin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		029AAB972935921D00E17612 /* AllCoinsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCoinsView.swift; sourceTree = "<group>"; };
 		029AAB992935923000E17612 /* CoinsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsRow.swift; sourceTree = "<group>"; };
 		029AAB9B29359C1100E17612 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		029AAB9D2935A18600E17612 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +66,8 @@
 			isa = PBXGroup;
 			children = (
 				029AAB8D2935895200E17612 /* App */,
-				029AAB8C2935894A00E17612 /* Core */,
 				029AAB8B2935894100E17612 /* Model */,
+				029AAB8C2935894A00E17612 /* Core */,
 				029AAB8E2935895700E17612 /* Extensions */,
 				029AAB8A2935893500E17612 /* Utillities */,
 				029AAB80293588F900E17612 /* Assets.xcassets */,
@@ -92,6 +94,7 @@
 		029AAB8B2935894100E17612 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				029AAB9D2935A18600E17612 /* Coin.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				029AAB9329358AD500E17612 /* TopMoversView.swift in Sources */,
 				029AAB982935921D00E17612 /* AllCoinsView.swift in Sources */,
 				029AAB7D293588F800E17612 /* SwiftCoinApp.swift in Sources */,
+				029AAB9E2935A18600E17612 /* Coin.swift in Sources */,
 				029AAB9529358B0300E17612 /* TopMoversItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
