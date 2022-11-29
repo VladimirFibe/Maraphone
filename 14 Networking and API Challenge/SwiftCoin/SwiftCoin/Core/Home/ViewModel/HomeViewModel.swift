@@ -1,6 +1,7 @@
 import Foundation
 
 final class HomeViewModel: ObservableObject {
+    @Published var coins: [Coin] = []
     
     init() {
         fetchCoinData()
@@ -27,7 +28,7 @@ final class HomeViewModel: ObservableObject {
             
             do {
                 let coins: [Coin] = try JSONDecoder().decode([Coin].self, from: data)
-                print("DEBUG: \(coins)")
+                self.coins = coins
             } catch let error {
                 print("DEBUG: \(error.localizedDescription)")
             }
