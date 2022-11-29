@@ -13,6 +13,8 @@
 		029AAB84293588F900E17612 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 029AAB83293588F900E17612 /* Preview Assets.xcassets */; };
 		029AAB9329358AD500E17612 /* TopMoversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029AAB9229358AD500E17612 /* TopMoversView.swift */; };
 		029AAB9529358B0300E17612 /* TopMoversItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029AAB9429358B0300E17612 /* TopMoversItemView.swift */; };
+		029AAB982935921D00E17612 /* AllCoinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029AAB972935921D00E17612 /* AllCoinsView.swift */; };
+		029AAB9A2935923000E17612 /* CoinsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029AAB992935923000E17612 /* CoinsRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		029AAB9229358AD500E17612 /* TopMoversView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversView.swift; sourceTree = "<group>"; };
 		029AAB9429358B0300E17612 /* TopMoversItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversItemView.swift; sourceTree = "<group>"; };
 		029AAB96293590EA00E17612 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		029AAB972935921D00E17612 /* AllCoinsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCoinsView.swift; sourceTree = "<group>"; };
+		029AAB992935923000E17612 /* CoinsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,8 @@
 				029AAB7E293588F800E17612 /* HomeView.swift */,
 				029AAB9229358AD500E17612 /* TopMoversView.swift */,
 				029AAB9429358B0300E17612 /* TopMoversItemView.swift */,
+				029AAB972935921D00E17612 /* AllCoinsView.swift */,
+				029AAB992935923000E17612 /* CoinsRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -210,7 +216,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				029AAB7F293588F800E17612 /* HomeView.swift in Sources */,
+				029AAB9A2935923000E17612 /* CoinsRow.swift in Sources */,
 				029AAB9329358AD500E17612 /* TopMoversView.swift in Sources */,
+				029AAB982935921D00E17612 /* AllCoinsView.swift in Sources */,
 				029AAB7D293588F800E17612 /* SwiftCoinApp.swift in Sources */,
 				029AAB9529358B0300E17612 /* TopMoversItemView.swift in Sources */,
 			);
