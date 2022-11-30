@@ -11,7 +11,7 @@ struct CoinsRow: View {
     let coin: Coin
     var body: some View {
         HStack {
-            Text("\(coin.marketCapRank ?? 1)")
+            Text("\(coin.marketCapRank)")
                 .font(.caption)
                 .foregroundColor(.gray)
             AsyncImage(url: URL(string: coin.image)) { image in
@@ -35,12 +35,12 @@ struct CoinsRow: View {
             .padding(.leading, 2)
             Spacer()
             VStack(alignment: .trailing, spacing: 4.0) {
-                Text(String(format: "$%.2f", coin.currentPrice))
+                Text(coin.currentPrice.toCurrency())
                     .font(.subheadline)
                     .fontWeight(.semibold)
-                Text("-5.60%")
+                Text(coin.priceChangePercentage24H.toPercent())
                     .font(.caption)
-                    .foregroundColor(.red)
+                    .foregroundColor(coin.priceChangePercentage24H > 0 ? Color(.systemGreen) : Color(.systemRed))
             }
             .padding(.leading, 2)
         }

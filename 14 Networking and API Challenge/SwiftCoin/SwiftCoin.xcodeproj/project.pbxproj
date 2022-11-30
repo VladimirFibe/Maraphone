@@ -17,6 +17,7 @@
 		029AAB9A2935923000E17612 /* CoinsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029AAB992935923000E17612 /* CoinsRow.swift */; };
 		029AAB9C29359C1100E17612 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029AAB9B29359C1100E17612 /* HomeViewModel.swift */; };
 		029AAB9E2935A18600E17612 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029AAB9D2935A18600E17612 /* Coin.swift */; };
+		02FBFF1C2936C6BC005016AC /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FBFF1B2936C6BC005016AC /* Double+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		029AAB992935923000E17612 /* CoinsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsRow.swift; sourceTree = "<group>"; };
 		029AAB9B29359C1100E17612 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		029AAB9D2935A18600E17612 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		02FBFF1B2936C6BC005016AC /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		029AAB8E2935895700E17612 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				02FBFF1B2936C6BC005016AC /* Double+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			files = (
 				029AAB7F293588F800E17612 /* HomeView.swift in Sources */,
 				029AAB9A2935923000E17612 /* CoinsRow.swift in Sources */,
+				02FBFF1C2936C6BC005016AC /* Double+Extension.swift in Sources */,
 				029AAB9C29359C1100E17612 /* HomeViewModel.swift in Sources */,
 				029AAB9329358AD500E17612 /* TopMoversView.swift in Sources */,
 				029AAB982935921D00E17612 /* AllCoinsView.swift in Sources */,

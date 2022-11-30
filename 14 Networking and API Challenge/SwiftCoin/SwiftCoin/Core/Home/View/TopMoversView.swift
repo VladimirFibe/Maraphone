@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct TopMoversView: View {
+    @StateObject var viewModel: HomeViewModel
     var body: some View {
         VStack(alignment: .leading) {
             Text("Top Movers")
                 .font(.headline)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 16.0) {
-                    ForEach(0 ..< 15, id: \.self) { _ in
-                        TopMoversItemView()
+                    ForEach(viewModel.topMovingCoins) { coin in
+                        TopMoversItemView(coin: coin)
                     }
                 }
             }
@@ -26,6 +27,6 @@ struct TopMoversView: View {
 
 struct TopMoversView_Previews: PreviewProvider {
     static var previews: some View {
-        TopMoversView()
+        TopMoversView(viewModel: HomeViewModel())
     }
 }
