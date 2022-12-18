@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  Chess
-//
-//  Created by Vladimir Fibe on 12/18/22.
-//
-
 import UIKit
 
 @main

@@ -357,7 +357,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="moveButton" destination="DGO-xq-Adg" id="ZeD-DJ-s3P"/>
                         <outlet property="textField" destination="KsD-Ps-fCd" id="TxT-lL-dYa"/>
                         <outletCollection property="pieces" destination="aQf-it-VGs" collectionClass="NSMutableArray" id="0rd-bZ-ZJR"/>
                         <outletCollection property="pieces" destination="Zd1-Cd-gsg" collectionClass="NSMutableArray" id="Rxy-zx-Vd0"/>

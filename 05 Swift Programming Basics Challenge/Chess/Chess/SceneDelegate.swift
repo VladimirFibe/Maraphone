@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  Chess
-//
-//  Created by Vladimir Fibe on 12/18/22.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
