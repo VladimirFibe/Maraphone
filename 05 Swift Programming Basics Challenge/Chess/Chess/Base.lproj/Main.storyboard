@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Chess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlackRook2" translatesAutoresizingMaskIntoConstraints="NO" id="pQ4-SP-ZB4" userLabel="a8">
+                                <rect key="frame" x="0.0" y="217" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlackKnight2" translatesAutoresizingMaskIntoConstraints="NO" id="R1E-7p-Beb" userLabel="b8">
+                                <rect key="frame" x="49" y="217" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlackBishop2" translatesAutoresizingMaskIntoConstraints="NO" id="9Fu-Fk-kCe" userLabel="c8">
+                                <rect key="frame" x="98" y="217" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlackKing2" translatesAutoresizingMaskIntoConstraints="NO" id="YFj-5e-SPg" userLabel="d8">
+                                <rect key="frame" x="147" y="217" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlackQueen2" translatesAutoresizingMaskIntoConstraints="NO" id="gxa-w6-1bi" userLabel="e8">
+                                <rect key="frame" x="197" y="217" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlackBishop2" translatesAutoresizingMaskIntoConstraints="NO" id="Fuz-IJ-1Mo" userLabel="f8">
+                                <rect key="frame" x="246" y="217" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlackKnight2" translatesAutoresizingMaskIntoConstraints="NO" id="XVK-hH-rTF" userLabel="g8">
+                                <rect key="frame" x="295" y="217" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlackRook2" translatesAutoresizingMaskIntoConstraints="NO" id="WUP-2g-VEw" userLabel="h8">
+                                <rect key="frame" x="344" y="217" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlackPawn2" translatesAutoresizingMaskIntoConstraints="NO" id="bJx-5g-Coo" userLabel="a7">
+                                <rect key="frame" x="0.0" y="266" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlackPawn2" translatesAutoresizingMaskIntoConstraints="NO" id="MGe-Bg-aB5" userLabel="b7">
+                                <rect key="frame" x="49" y="266" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlackPawn2" translatesAutoresizingMaskIntoConstraints="NO" id="Yh0-MA-JpJ" userLabel="c7">
+                                <rect key="frame" x="98" y="266" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlackPawn2" translatesAutoresizingMaskIntoConstraints="NO" id="LCS-Um-1aP" userLabel="d7">
+                                <rect key="frame" x="147" y="266" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlackPawn2" translatesAutoresizingMaskIntoConstraints="NO" id="krP-qF-KgV" userLabel="e7">
+                                <rect key="frame" x="197" y="266" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlackPawn2" translatesAutoresizingMaskIntoConstraints="NO" id="Orf-V3-xxP" userLabel="f7">
+                                <rect key="frame" x="246" y="266" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlackPawn2" translatesAutoresizingMaskIntoConstraints="NO" id="hQN-X9-FRs" userLabel="g7">
+                                <rect key="frame" x="295" y="266" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlackPawn2" translatesAutoresizingMaskIntoConstraints="NO" id="WyO-eh-tzC" userLabel="h7">
+                                <rect key="frame" x="344" y="266" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="51q-3y-Nfp" userLabel="a6">
+                                <rect key="frame" x="0.0" y="315" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mez-u2-tCo" userLabel="b6">
+                                <rect key="frame" x="49" y="315" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w8E-96-cl0" userLabel="c6">
+                                <rect key="frame" x="98" y="315" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BSC-6d-T7G" userLabel="d6">
+                                <rect key="frame" x="147" y="315" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s4o-2e-guL" userLabel="e6">
+                                <rect key="frame" x="197" y="315" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qdE-xN-6VI" userLabel="f6">
+                                <rect key="frame" x="246" y="315" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AyD-aq-f5O" userLabel="g6">
+                                <rect key="frame" x="295" y="315" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X9L-We-yho" userLabel="h6">
+                                <rect key="frame" x="344" y="315" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aQf-RI-ZGB" userLabel="a5">
+                                <rect key="frame" x="0.0" y="364" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Wx-9M-eWu" userLabel="b5">
+                                <rect key="frame" x="49" y="364" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O4W-Dj-Q4t" userLabel="c5">
+                                <rect key="frame" x="98" y="364" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FqT-fH-8FL" userLabel="d5">
+                                <rect key="frame" x="147" y="364" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OGb-Da-cJc" userLabel="e5">
+                                <rect key="frame" x="197" y="364" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dtj-6g-72r" userLabel="f5">
+                                <rect key="frame" x="246" y="364" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jme-eR-ajh" userLabel="g5">
+                                <rect key="frame" x="295" y="364" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H18-XV-MNV" userLabel="h5">
+                                <rect key="frame" x="344" y="364" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aAN-EI-tND" userLabel="a4">
+                                <rect key="frame" x="0.0" y="413" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ILC-qe-0cO" userLabel="b4">
+                                <rect key="frame" x="49" y="413" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aPF-aO-Wnc" userLabel="c4">
+                                <rect key="frame" x="98" y="413" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y8i-qe-WUy" userLabel="d4">
+                                <rect key="frame" x="147" y="413" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gAt-kL-eMq" userLabel="e4">
+                                <rect key="frame" x="197" y="413" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="19Y-jB-H3P" userLabel="f4">
+                                <rect key="frame" x="246" y="413" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wfd-5Z-pTK" userLabel="g4">
+                                <rect key="frame" x="295" y="413" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q8G-6W-D1w" userLabel="h4">
+                                <rect key="frame" x="344" y="413" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eDA-UO-4qm" userLabel="a3">
+                                <rect key="frame" x="0.0" y="462" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bpO-Pe-dzz" userLabel="b3">
+                                <rect key="frame" x="49" y="462" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qkp-C6-McR" userLabel="c3">
+                                <rect key="frame" x="98" y="462" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t52-YV-imv" userLabel="d3">
+                                <rect key="frame" x="147" y="462" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3rE-Vd-eCU" userLabel="e3">
+                                <rect key="frame" x="197" y="462" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Waz-hR-FGz" userLabel="f3">
+                                <rect key="frame" x="246" y="462" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hdd-Bj-anN" userLabel="g3">
+                                <rect key="frame" x="295" y="462" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u9x-1B-MaS" userLabel="h3">
+                                <rect key="frame" x="344" y="462" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhitePawn2" translatesAutoresizingMaskIntoConstraints="NO" id="dIQ-Kt-jvb" userLabel="a1">
+                                <rect key="frame" x="0.0" y="511" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhitePawn2" translatesAutoresizingMaskIntoConstraints="NO" id="r1M-MG-Dge" userLabel="b2">
+                                <rect key="frame" x="49" y="511" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhitePawn2" translatesAutoresizingMaskIntoConstraints="NO" id="hyv-Y8-aGZ" userLabel="c2">
+                                <rect key="frame" x="98" y="511" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhitePawn2" translatesAutoresizingMaskIntoConstraints="NO" id="nen-g5-KDb" userLabel="d2">
+                                <rect key="frame" x="147" y="511" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhitePawn2" translatesAutoresizingMaskIntoConstraints="NO" id="jGx-IF-3U7" userLabel="e2">
+                                <rect key="frame" x="197" y="511" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhitePawn2" translatesAutoresizingMaskIntoConstraints="NO" id="Vno-nI-sfC" userLabel="f2">
+                                <rect key="frame" x="246" y="511" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhitePawn2" translatesAutoresizingMaskIntoConstraints="NO" id="e5O-9l-dM9" userLabel="g2">
+                                <rect key="frame" x="295" y="511" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhitePawn2" translatesAutoresizingMaskIntoConstraints="NO" id="yZE-nG-mSB" userLabel="h2">
+                                <rect key="frame" x="344" y="511" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhiteRook2" translatesAutoresizingMaskIntoConstraints="NO" id="aQf-it-VGs" userLabel="a1">
+                                <rect key="frame" x="0.0" y="560" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhiteKnight2" translatesAutoresizingMaskIntoConstraints="NO" id="Zd1-Cd-gsg" userLabel="b1">
+                                <rect key="frame" x="49" y="560" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhiteBishop2" translatesAutoresizingMaskIntoConstraints="NO" id="Sek-DY-7Uq" userLabel="c1">
+                                <rect key="frame" x="98" y="560" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhiteKing2" translatesAutoresizingMaskIntoConstraints="NO" id="JKc-DO-rge" userLabel="d1">
+                                <rect key="frame" x="147" y="560" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhiteQueen2" translatesAutoresizingMaskIntoConstraints="NO" id="XgA-5z-Cjk" userLabel="e1">
+                                <rect key="frame" x="197" y="560" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhiteBishop2" translatesAutoresizingMaskIntoConstraints="NO" id="tWj-Cl-w6o" userLabel="f1">
+                                <rect key="frame" x="246" y="560" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhiteKnight2" translatesAutoresizingMaskIntoConstraints="NO" id="JOF-MK-vqT" userLabel="g1">
+                                <rect key="frame" x="295" y="560" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorWhite"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhiteRook2" translatesAutoresizingMaskIntoConstraints="NO" id="3fS-FJ-BI7" userLabel="h1">
+                                <rect key="frame" x="344" y="560" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ColorBlack"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KsD-Ps-fCd">
+                                <rect key="frame" x="49" y="642" width="295" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGO-xq-Adg">
+                                <rect key="frame" x="164" y="712" width="66" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Move"/>
+                                <connections>
+                                    <action selector="moveTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UFw-MB-aYy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="moveButton" destination="DGO-xq-Adg" id="ZeD-DJ-s3P"/>
+                        <outlet property="textField" destination="KsD-Ps-fCd" id="TxT-lL-dYa"/>
+                        <outletCollection property="pieces" destination="aQf-it-VGs" collectionClass="NSMutableArray" id="0rd-bZ-ZJR"/>
+                        <outletCollection property="pieces" destination="Zd1-Cd-gsg" collectionClass="NSMutableArray" id="Rxy-zx-Vd0"/>
+                        <outletCollection property="pieces" destination="Sek-DY-7Uq" collectionClass="NSMutableArray" id="gsD-Xm-yyr"/>
+                        <outletCollection property="pieces" destination="JKc-DO-rge" collectionClass="NSMutableArray" id="8Mj-93-d9m"/>
+                        <outletCollection property="pieces" destination="XgA-5z-Cjk" collectionClass="NSMutableArray" id="FyH-27-nUG"/>
+                        <outletCollection property="pieces" destination="tWj-Cl-w6o" collectionClass="NSMutableArray" id="MhL-hh-eY6"/>
+                        <outletCollection property="pieces" destination="JOF-MK-vqT" collectionClass="NSMutableArray" id="bxJ-uy-dy1"/>
+                        <outletCollection property="pieces" destination="3fS-FJ-BI7" collectionClass="NSMutableArray" id="tsz-Zh-6Mk"/>
+                        <outletCollection property="pieces" destination="dIQ-Kt-jvb" collectionClass="NSMutableArray" id="Ys7-MG-Gki"/>
+                        <outletCollection property="pieces" destination="r1M-MG-Dge" collectionClass="NSMutableArray" id="I8c-74-wmL"/>
+                        <outletCollection property="pieces" destination="hyv-Y8-aGZ" collectionClass="NSMutableArray" id="wCM-Gc-Ns6"/>
+                        <outletCollection property="pieces" destination="nen-g5-KDb" collectionClass="NSMutableArray" id="Agx-bf-uOb"/>
+                        <outletCollection property="pieces" destination="jGx-IF-3U7" collectionClass="NSMutableArray" id="Lhh-WG-fK0"/>
+                        <outletCollection property="pieces" destination="Vno-nI-sfC" collectionClass="NSMutableArray" id="Q3W-7V-Bs4"/>
+                        <outletCollection property="pieces" destination="e5O-9l-dM9" collectionClass="NSMutableArray" id="gJG-3v-ach"/>
+                        <outletCollection property="pieces" destination="yZE-nG-mSB" collectionClass="NSMutableArray" id="8xh-yo-EGk"/>
+                        <outletCollection property="pieces" destination="eDA-UO-4qm" collectionClass="NSMutableArray" id="cs9-7v-GRq"/>
+                        <outletCollection property="pieces" destination="bpO-Pe-dzz" collectionClass="NSMutableArray" id="Wo0-wk-OUM"/>
+                        <outletCollection property="pieces" destination="Qkp-C6-McR" collectionClass="NSMutableArray" id="9fH-4G-bza"/>
+                        <outletCollection property="pieces" destination="t52-YV-imv" collectionClass="NSMutableArray" id="rzn-iQ-sif"/>
+                        <outletCollection property="pieces" destination="3rE-Vd-eCU" collectionClass="NSMutableArray" id="kod-Gz-RpM"/>
+                        <outletCollection property="pieces" destination="Waz-hR-FGz" collectionClass="NSMutableArray" id="286-9J-kme"/>
+                        <outletCollection property="pieces" destination="Hdd-Bj-anN" collectionClass="NSMutableArray" id="LkE-0i-6Nl"/>
+                        <outletCollection property="pieces" destination="u9x-1B-MaS" collectionClass="NSMutableArray" id="oMa-sE-NGv"/>
+                        <outletCollection property="pieces" destination="aAN-EI-tND" collectionClass="NSMutableArray" id="2L7-xx-xjD"/>
+                        <outletCollection property="pieces" destination="ILC-qe-0cO" collectionClass="NSMutableArray" id="AEb-cb-bBs"/>
+                        <outletCollection property="pieces" destination="aPF-aO-Wnc" collectionClass="NSMutableArray" id="J8X-a2-Zw3"/>
+                        <outletCollection property="pieces" destination="y8i-qe-WUy" collectionClass="NSMutableArray" id="j41-AR-7VS"/>
+                        <outletCollection property="pieces" destination="gAt-kL-eMq" collectionClass="NSMutableArray" id="TsG-hp-Hyf"/>
+                        <outletCollection property="pieces" destination="19Y-jB-H3P" collectionClass="NSMutableArray" id="Klk-Yt-5sh"/>
+                        <outletCollection property="pieces" destination="Wfd-5Z-pTK" collectionClass="NSMutableArray" id="1tC-hv-41w"/>
+                        <outletCollection property="pieces" destination="q8G-6W-D1w" collectionClass="NSMutableArray" id="xp0-be-Mfk"/>
+                        <outletCollection property="pieces" destination="aQf-RI-ZGB" collectionClass="NSMutableArray" id="OqG-j9-JMs"/>
+                        <outletCollection property="pieces" destination="0Wx-9M-eWu" collectionClass="NSMutableArray" id="Gk7-OT-Va0"/>
+                        <outletCollection property="pieces" destination="O4W-Dj-Q4t" collectionClass="NSMutableArray" id="3PJ-VG-zoq"/>
+                        <outletCollection property="pieces" destination="FqT-fH-8FL" collectionClass="NSMutableArray" id="Nnt-7v-0Fq"/>
+                        <outletCollection property="pieces" destination="OGb-Da-cJc" collectionClass="NSMutableArray" id="4w6-gt-tvA"/>
+                        <outletCollection property="pieces" destination="dtj-6g-72r" collectionClass="NSMutableArray" id="Oga-z9-J5T"/>
+                        <outletCollection property="pieces" destination="jme-eR-ajh" collectionClass="NSMutableArray" id="M4c-Ku-Jur"/>
+                        <outletCollection property="pieces" destination="H18-XV-MNV" collectionClass="NSMutableArray" id="0ze-hQ-sVY"/>
+                        <outletCollection property="pieces" destination="51q-3y-Nfp" collectionClass="NSMutableArray" id="dfA-TL-V3H"/>
+                        <outletCollection property="pieces" destination="Mez-u2-tCo" collectionClass="NSMutableArray" id="ucP-8h-pGU"/>
+                        <outletCollection property="pieces" destination="w8E-96-cl0" collectionClass="NSMutableArray" id="cnI-gp-P2T"/>
+                        <outletCollection property="pieces" destination="BSC-6d-T7G" collectionClass="NSMutableArray" id="LKa-Sf-KW9"/>
+                        <outletCollection property="pieces" destination="s4o-2e-guL" collectionClass="NSMutableArray" id="R37-86-n9h"/>
+                        <outletCollection property="pieces" destination="qdE-xN-6VI" collectionClass="NSMutableArray" id="pjA-Ci-LPu"/>
+                        <outletCollection property="pieces" destination="AyD-aq-f5O" collectionClass="NSMutableArray" id="c2X-VH-dz8"/>
+                        <outletCollection property="pieces" destination="X9L-We-yho" collectionClass="NSMutableArray" id="Dva-50-IqY"/>
+                        <outletCollection property="pieces" destination="bJx-5g-Coo" collectionClass="NSMutableArray" id="fgQ-be-5s4"/>
+                        <outletCollection property="pieces" destination="MGe-Bg-aB5" collectionClass="NSMutableArray" id="qhT-vD-WE5"/>
+                        <outletCollection property="pieces" destination="Yh0-MA-JpJ" collectionClass="NSMutableArray" id="C7K-bg-2Mu"/>
+                        <outletCollection property="pieces" destination="LCS-Um-1aP" collectionClass="NSMutableArray" id="Uz3-NM-KcV"/>
+                        <outletCollection property="pieces" destination="krP-qF-KgV" collectionClass="NSMutableArray" id="hjr-47-tTD"/>
+                        <outletCollection property="pieces" destination="Orf-V3-xxP" collectionClass="NSMutableArray" id="3Ae-vC-36S"/>
+                        <outletCollection property="pieces" destination="hQN-X9-FRs" collectionClass="NSMutableArray" id="6CI-Zw-vqP"/>
+                        <outletCollection property="pieces" destination="WyO-eh-tzC" collectionClass="NSMutableArray" id="b6L-Db-boj"/>
+                        <outletCollection property="pieces" destination="pQ4-SP-ZB4" collectionClass="NSMutableArray" id="UJq-Pv-rbc"/>
+                        <outletCollection property="pieces" destination="R1E-7p-Beb" collectionClass="NSMutableArray" id="rsS-UV-HFd"/>
+                        <outletCollection property="pieces" destination="9Fu-Fk-kCe" collectionClass="NSMutableArray" id="CTF-mz-Mdj"/>
+                        <outletCollection property="pieces" destination="YFj-5e-SPg" collectionClass="NSMutableArray" id="rSg-tG-WRn"/>
+                        <outletCollection property="pieces" destination="gxa-w6-1bi" collectionClass="NSMutableArray" id="EhD-b0-SKG"/>
+                        <outletCollection property="pieces" destination="Fuz-IJ-1Mo" collectionClass="NSMutableArray" id="VJf-a2-B4g"/>
+                        <outletCollection property="pieces" destination="XVK-hH-rTF" collectionClass="NSMutableArray" id="D7e-f7-hDO"/>
+                        <outletCollection property="pieces" destination="WUP-2g-VEw" collectionClass="NSMutableArray" id="P4e-Dt-w5h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75.572519083969468" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BlackBishop2" width="256" height="256"/>
+        <image name="BlackKing2" width="256" height="256"/>
+        <image name="BlackKnight2" width="256" height="256"/>
+        <image name="BlackPawn2" width="256" height="256"/>
+        <image name="BlackQueen2" width="256" height="256"/>
+        <image name="BlackRook2" width="256" height="256"/>
+        <image name="WhiteBishop2" width="256" height="256"/>
+        <image name="WhiteKing2" width="256" height="256"/>
+        <image name="WhiteKnight2" width="256" height="256"/>
+        <image name="WhitePawn2" width="256" height="256"/>
+        <image name="WhiteQueen2" width="256" height="256"/>
+        <image name="WhiteRook2" width="256" height="256"/>
+        <namedColor name="ColorBlack">
+            <color red="0.56862745098039214" green="0.56862745098039214" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ColorWhite">
+            <color red="0.99607843137254903" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
