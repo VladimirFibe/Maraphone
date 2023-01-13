@@ -337,27 +337,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="ColorBlack"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KsD-Ps-fCd">
-                                <rect key="frame" x="49" y="642" width="295" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGO-xq-Adg">
-                                <rect key="frame" x="164" y="712" width="66" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Move"/>
-                                <connections>
-                                    <action selector="moveTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UFw-MB-aYy"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="textField" destination="KsD-Ps-fCd" id="TxT-lL-dYa"/>
                         <outletCollection property="pieces" destination="aQf-it-VGs" collectionClass="NSMutableArray" id="0rd-bZ-ZJR"/>
                         <outletCollection property="pieces" destination="Zd1-Cd-gsg" collectionClass="NSMutableArray" id="Rxy-zx-Vd0"/>
                         <outletCollection property="pieces" destination="Sek-DY-7Uq" collectionClass="NSMutableArray" id="gsD-Xm-yyr"/>
@@ -425,6 +409,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="8IB-h7-FB6"/>
             </objects>
             <point key="canvasLocation" x="75.572519083969468" y="3.5211267605633805"/>
         </scene>
