@@ -18,10 +18,9 @@ struct CoinRowView: View {
                     .frame(width: 32, height: 32)
                     .foregroundColor(.orange)
             } placeholder: {
-                Circle()
+                ProgressView()
                     .frame(width: 32, height: 32)
-                    .background(Color(.systemGray5))
-            }                
+            }
             
             // coin name info
             VStack(alignment: .leading, spacing: 4) {

@@ -29,6 +29,7 @@
 		02DE95582970F54D00FC8216 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		02DE955A2970F54E00FC8216 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02DE955D2970F54E00FC8216 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		02F1EBB4297123FE0017C811 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +71,7 @@
 		02DE954A2970F54D00FC8216 = {
 			isa = PBXGroup;
 			children = (
+				02F1EBB4297123FE0017C811 /* README.md */,
 				02DE95552970F54D00FC8216 /* CryptoAsyncAwait */,
 				02DE95542970F54D00FC8216 /* Products */,
 			);
