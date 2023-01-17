@@ -13,6 +13,7 @@
 		0234E3532976FED600F85277 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0234E3512976FED600F85277 /* Main.storyboard */; };
 		0234E3552976FED700F85277 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0234E3542976FED700F85277 /* Assets.xcassets */; };
 		0234E3582976FED700F85277 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0234E3562976FED700F85277 /* LaunchScreen.storyboard */; };
+		0234E3602977179A00F85277 /* background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0234E35F2977179A00F85277 /* background.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0234E3542976FED700F85277 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0234E3572976FED700F85277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0234E3592976FED700F85277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0234E35F2977179A00F85277 /* background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = background.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				0234E34B2976FED600F85277 /* AppDelegate.swift */,
 				0234E34D2976FED600F85277 /* SceneDelegate.swift */,
 				0234E34F2976FED600F85277 /* ViewController.swift */,
+				0234E35F2977179A00F85277 /* background.mp3 */,
 				0234E3512976FED600F85277 /* Main.storyboard */,
 				0234E3542976FED700F85277 /* Assets.xcassets */,
 				0234E3562976FED700F85277 /* LaunchScreen.storyboard */,
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0234E3602977179A00F85277 /* background.mp3 in Resources */,
 				0234E3582976FED700F85277 /* LaunchScreen.storyboard in Resources */,
 				0234E3552976FED700F85277 /* Assets.xcassets in Resources */,
 				0234E3532976FED600F85277 /* Main.storyboard in Resources */,
