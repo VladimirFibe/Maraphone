@@ -16,6 +16,7 @@
 		02758542297B87AB00CF7785 /* ViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02758541297B87AB00CF7785 /* ViewControllerRepresentable.swift */; };
 		02758544297B88D900CF7785 /* CalculatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02758543297B88D900CF7785 /* CalculatorButton.swift */; };
 		02758546297B952F00CF7785 /* RoundCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02758545297B952F00CF7785 /* RoundCornerButton.swift */; };
+		0275854C297BC02700CF7785 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0275854B297BC02700CF7785 /* 2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		02758541297B87AB00CF7785 /* ViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRepresentable.swift; sourceTree = "<group>"; };
 		02758543297B88D900CF7785 /* CalculatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButton.swift; sourceTree = "<group>"; };
 		02758545297B952F00CF7785 /* RoundCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCornerButton.swift; sourceTree = "<group>"; };
+		02758547297BB32E00CF7785 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0275854B297BC02700CF7785 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +49,8 @@
 		02758521297B86EB00CF7785 = {
 			isa = PBXGroup;
 			children = (
+				02758547297BB32E00CF7785 /* README.md */,
+				02758548297BB34C00CF7785 /* img */,
 				0275852C297B86EB00CF7785 /* Calculator */,
 				0275852B297B86EB00CF7785 /* Products */,
 			);
@@ -74,6 +79,14 @@
 				0275853B297B86ED00CF7785 /* Info.plist */,
 			);
 			path = Calculator;
+			sourceTree = "<group>";
+		};
+		02758548297BB34C00CF7785 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				0275854B297BC02700CF7785 /* 2.png */,
+			);
+			path = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0275853A297B86ED00CF7785 /* LaunchScreen.storyboard in Resources */,
+				0275854C297BC02700CF7785 /* 2.png in Resources */,
 				02758537297B86ED00CF7785 /* Assets.xcassets in Resources */,
 				02758535297B86EB00CF7785 /* Main.storyboard in Resources */,
 			);

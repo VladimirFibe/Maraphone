@@ -20,7 +20,7 @@ class RoundCornerButton: UIButton {
         } else {
             layer.cornerRadius = height / 2
         }
-        titleLabel?.font = .systemFont(ofSize: height / 2)
+        titleLabel?.font = .boldSystemFont(ofSize: height / 2)
         if titleLabel?.text == "0" {
             contentHorizontalAlignment = .leading
             if let widht = titleLabel?.intrinsicContentSize.width {

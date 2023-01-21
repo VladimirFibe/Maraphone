@@ -18,9 +18,7 @@ class ViewController: UIViewController {
     }
     
     func setupStack() {
-        display.text = "0"
-        display.textAlignment = .right
-        display.font = .boldSystemFont(ofSize: 60)
+        setupDisplay()
         calculatorStack.axis = .vertical
         calculatorStack.spacing = 8
         for row in buttons {
@@ -47,6 +45,20 @@ class ViewController: UIViewController {
             view.safeAreaLayoutGuide.bottomAnchor.constraint(
                 equalToSystemSpacingBelow: calculatorStack.bottomAnchor, multiplier: 1)
         ])
+    }
+    func setupDisplay() {
+        let textString = "1"
+        let font = UIFont.systemFont(ofSize: UIScreen.main.bounds.width / 5)
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.tailIndent = -20
+        paragraphStyle.alignment = .right
+        let attibutes: [NSAttributedString.Key: Any] = [
+            .font: font,
+            .foregroundColor: UIColor.label,
+            .paragraphStyle: paragraphStyle
+        ]
+        display.attributedText = NSMutableAttributedString(
+            string: textString, attributes: attibutes)
     }
     func buttonsStack() -> UIStackView {
         let stack = UIStackView()
