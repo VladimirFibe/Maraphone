@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MagicBall" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gd8-SM-24P">
+                                <rect key="frame" x="16" y="245.66666666666663" width="361" height="361"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gd8-SM-24P" secondAttribute="height" multiplier="1:1" id="01X-Ds-udD"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4Z-jg-8oU">
+                                <rect key="frame" x="110.33333333333333" y="710" width="172.66666666666669" height="58"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Спросить">
+                                            <attributes>
+                                                <font key="NSFont" size="36" name="Impact"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="askButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g9b-0m-R0A"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Чего тебе надобно, старче?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Dp-u8-B69">
+                                <rect key="frame" x="16" y="120" width="361" height="95.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gd8-SM-24P" secondAttribute="trailing" constant="16" id="7cf-ep-K7n"/>
+                            <constraint firstItem="gd8-SM-24P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="H93-da-yvM"/>
+                            <constraint firstItem="gd8-SM-24P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RNT-oV-Q3Z"/>
+                            <constraint firstItem="0Dp-u8-B69" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="WrU-C8-BxL"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="D4Z-jg-8oU" secondAttribute="bottom" constant="50" id="YQQ-g0-tvo"/>
+                            <constraint firstItem="gd8-SM-24P" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bdw-jC-HBJ"/>
+                            <constraint firstItem="D4Z-jg-8oU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cuh-fG-5Ra"/>
+                            <constraint firstItem="gd8-SM-24P" firstAttribute="top" secondItem="0Dp-u8-B69" secondAttribute="bottom" constant="30" id="fys-T4-P4e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Dp-u8-B69" secondAttribute="trailing" constant="16" id="x2w-OV-grh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="askButton" destination="D4Z-jg-8oU" id="S0B-Oe-pOw"/>
+                        <outlet property="imageView" destination="gd8-SM-24P" id="Amb-2d-QWn"/>
+                        <outlet property="titleLabel" destination="0Dp-u8-B69" id="2CW-a9-UX0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.824427480916029" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
