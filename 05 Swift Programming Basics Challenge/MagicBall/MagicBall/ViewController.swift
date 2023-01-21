@@ -4,14 +4,15 @@ import AVFoundation
 class ViewController: UIViewController {
     var player: AVAudioPlayer?
 
-    let answers = [#imageLiteral(resourceName: "ball1"), #imageLiteral(resourceName: "ball2"), #imageLiteral(resourceName: "ball3"), #imageLiteral(resourceName: "ball4"), #imageLiteral(resourceName: "ball5")]
+    let image = #imageLiteral(resourceName: "Ball_1")
+    let answers = [#imageLiteral(resourceName: "Ball_2"), #imageLiteral(resourceName: "Ball_3"), #imageLiteral(resourceName: "Ball_4"), #imageLiteral(resourceName: "Ball_5"), #imageLiteral(resourceName: "Ball_6"), #imageLiteral(resourceName: "Ball_7")]
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var askButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.image = answers.randomElement()
+        imageView.image = image
         view.backgroundColor = .systemBlue
         askButton.backgroundColor = .white
         player?.numberOfLoops = -1
