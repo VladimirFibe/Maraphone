@@ -13,3 +13,27 @@ func exercise() {
 }
 
 exercise()
+
+
+
+//for a in "a"..."z" {
+//    alphabet.append(a)
+//}
+//alphabet
+
+
+let chars: [Character] = ["a", " ", "™"]
+for ch in chars {
+    print(ch, "-->", ch.asciiValue ?? 0)
+}
+
+var asciiVal3 = 65
+let c = Character(UnicodeScalar(97))
+let s = String(UnicodeScalar(UInt8(65)))
+let ss = "\u{41}"
+
+var alphabet: [String] = []
+for i in 97...122 {
+    alphabet.append(String(UnicodeScalar(UInt8(i))))
+}
+alphabet

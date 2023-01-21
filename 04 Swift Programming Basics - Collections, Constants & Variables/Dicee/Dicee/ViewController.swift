@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     @IBAction func rollButtonPressed(_ sender: UIButton) {
         dice[0].image = diceImages.randomElement()
-        dice[1].image = diceImages.randomElement()
+        dice[1].image = diceImages[Int.random(in: 0..<6)]
     }
 }
 
