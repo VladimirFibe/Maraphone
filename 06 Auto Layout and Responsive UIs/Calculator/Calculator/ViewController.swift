@@ -1,17 +1,18 @@
 import SwiftUI
 
 class ViewController: UIViewController {
-    
-    let buttons: [[CalculatorButton]] = [
-        [.ac, .plusMinus, .perecent, .divide],
-        [.seven, .eight, .nine, .multiply],
-        [.four, .five, .six, .minus],
-        [.one, .two, .three, .plus]
-    ]
-    
+    var displayValue: Double {
+        get {
+            Double(display.text!) ?? 0
+        }
+        set {
+            display.text = String(newValue)
+        }
+    }
+    var userIsInTheMiddleOfTyping = false
     let display = UILabel()
     lazy var calculatorStack = UIStackView(arrangedSubviews: [display])
-    
+    private var brain = CalculatorBrain()
     override func viewDidLoad() {
         super.viewDidLoad()
         setupStack()
@@ -21,6 +22,12 @@ class ViewController: UIViewController {
         setupDisplay()
         calculatorStack.axis = .vertical
         calculatorStack.spacing = 8
+        let buttons: [[CalculatorButton]] = [
+            [.ac, .plusMinus, .perecent, .divide],
+            [.seven, .eight, .nine, .multiply],
+            [.four, .five, .six, .minus],
+            [.one, .two, .three, .plus]
+        ]
         for row in buttons {
             let stack = buttonsStack()
             for button in row {
@@ -47,7 +54,7 @@ class ViewController: UIViewController {
         ])
     }
     func setupDisplay() {
-        let textString = "1"
+        let textString = "0"
         let font = UIFont.systemFont(ofSize: UIScreen.main.bounds.width / 5)
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.tailIndent = -20
@@ -77,11 +84,34 @@ class ViewController: UIViewController {
             uiButton.widthAnchor.constraint(equalTo: uiButton.heightAnchor).isActive = true
         }
         uiButton.layer.cornerRadius = 20
-        uiButton.addTarget(self, action: #selector(touchDigit), for: .primaryActionTriggered)
+        switch button {
+        case .zero, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .point :
+            uiButton.addTarget(self, action: #selector(touchDigit), for: .primaryActionTriggered)
+        default:
+            uiButton.addTarget(self, action: #selector(performOperation), for: .primaryActionTriggered)
+        }
         return uiButton
     }
     @objc func touchDigit(_ sender: UIButton) {
-        print(sender.titleLabel?.text ?? "empty label")
+        guard let digit = sender.currentTitle else { return }
+        if userIsInTheMiddleOfTyping {
+            let textCurrentlyInDisplay = display.text!
+            display.text = textCurrentlyInDisplay + digit
+        } else {
+            display.text = digit
+            userIsInTheMiddleOfTyping = true
+        }
+    }
+    @objc func performOperation(_ sender: UIButton) {
+      if userIsInTheMiddleOfTyping {
+        brain.setOperand(displayValue)
+        userIsInTheMiddleOfTyping = false
+      }
+      guard let mathematicalSymbol = sender.currentTitle else { return }
+      brain.performOperation(mathematicalSymbol)
+      if let result = brain.result {
+        displayValue = result
+      }
     }
 }
 
