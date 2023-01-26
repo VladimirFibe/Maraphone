@@ -1,28 +1,43 @@
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
+    var player: AVAudioPlayer!
     @IBOutlet weak var stackView: UIStackView!
-    let keys = ["C", "D", "E", "F", "G", "A", "B"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .cyan
         stackView.spacing = 10
         stackView.alignment = .center
         stackView.distribution = .fillEqually
+        setupButtons()
+    }
+    
+    func setupButtons() {
+        let keys = ["C", "D", "E", "F", "G", "A", "B"]
         for i in keys.indices {
-            guard i < stackView.arrangedSubviews.count,
-            let button = stackView.arrangedSubviews[i] as? UIButton else { return }
             let title = keys[i]
-            button.backgroundColor = UIColor(named: title)
-            button.setTitle(title, for: .normal)
-            button.tag = i
-            button.addTarget(self, action: #selector(touchKey), for: .primaryActionTriggered)
+            let button = UIButton(type: .system)
+            stackView.addArrangedSubview(button)
+            var config = UIButton.Configuration.filled()
+            config.cornerStyle = .medium
+            config.baseBackgroundColor = UIColor(named: title)
+            var attributedTitle = AttributedString(title)
+            attributedTitle.font = UIFont.systemFont(ofSize: 40)
+            config.attributedTitle = attributedTitle
+            button.configuration = config
+            button.addAction(UIAction { _ in self.playSound(title)},
+                             for: .primaryActionTriggered)
             button.widthAnchor.constraint(equalTo: view.widthAnchor,
                                           multiplier: (1 - CGFloat(i + 3) * 0.035)).isActive = true
-            button.layer.cornerRadius = 20
         }
     }
-    @objc func touchKey(_ sender: UIButton) {
-        print(sender.tag)
+    
+    func playSound(_ title: String) {
+        guard let url = Bundle.main.url(forResource: title, withExtension: "wav") else { return }
+        player = try! AVAudioPlayer(contentsOf: url)
+        player.play()
     }
 }
 
