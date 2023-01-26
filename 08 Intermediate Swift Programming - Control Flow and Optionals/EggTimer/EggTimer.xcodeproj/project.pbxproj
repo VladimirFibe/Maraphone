@@ -15,6 +15,7 @@
 		0299D00A2982229400339B87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0299D0082982229400339B87 /* LaunchScreen.storyboard */; };
 		0299D015298222FC00339B87 /* readme-end-banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 0299D013298222FC00339B87 /* readme-end-banner.png */; };
 		0299D016298222FC00339B87 /* AppBreweryBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = 0299D014298222FC00339B87 /* AppBreweryBanner.png */; };
+		0299D018298224A200339B87 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0299D017298224A200339B87 /* alarm.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		0299D011298222A400339B87 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0299D013298222FC00339B87 /* readme-end-banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "readme-end-banner.png"; sourceTree = "<group>"; };
 		0299D014298222FC00339B87 /* AppBreweryBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppBreweryBanner.png; sourceTree = "<group>"; };
+		0299D017298224A200339B87 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				0299D0062982229400339B87 /* Assets.xcassets */,
 				0299D0082982229400339B87 /* LaunchScreen.storyboard */,
 				0299D00B2982229400339B87 /* Info.plist */,
+				0299D017298224A200339B87 /* alarm.mp3 */,
 			);
 			path = EggTimer;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				0299D00A2982229400339B87 /* LaunchScreen.storyboard in Resources */,
 				0299D015298222FC00339B87 /* readme-end-banner.png in Resources */,
+				0299D018298224A200339B87 /* alarm.mp3 in Resources */,
 				0299D0072982229400339B87 /* Assets.xcassets in Resources */,
 				0299D016298222FC00339B87 /* AppBreweryBanner.png in Resources */,
 				0299D0052982229200339B87 /* Main.storyboard in Resources */,
