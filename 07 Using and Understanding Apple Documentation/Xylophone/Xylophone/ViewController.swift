@@ -27,10 +27,19 @@ class ViewController: UIViewController {
             attributedTitle.font = UIFont.systemFont(ofSize: 40)
             config.attributedTitle = attributedTitle
             button.configuration = config
-            button.addAction(UIAction { _ in self.playSound(title)},
-                             for: .primaryActionTriggered)
+            button.addAction(UIAction { _ in
+                self.keyPressed(button, title: title)
+            }, for: .primaryActionTriggered)
             button.widthAnchor.constraint(equalTo: view.widthAnchor,
                                           multiplier: (1 - CGFloat(i + 3) * 0.035)).isActive = true
+        }
+    }
+    
+    func keyPressed(_ sender: UIButton, title: String) {
+        playSound(title)
+        sender.alpha = 0.5
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            sender.alpha = 1
         }
     }
     

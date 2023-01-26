@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0274DF3A2982D7A300347066 /* EggView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0274DF392982D7A300347066 /* EggView.swift */; };
 		0299CFFE2982229200339B87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0299CFFD2982229200339B87 /* AppDelegate.swift */; };
 		0299D0002982229200339B87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0299CFFF2982229200339B87 /* SceneDelegate.swift */; };
 		0299D0022982229200339B87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0299D0012982229200339B87 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0274DF392982D7A300347066 /* EggView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggView.swift; sourceTree = "<group>"; };
 		0299CFFA2982229200339B87 /* EggTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EggTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0299CFFD2982229200339B87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0299CFFF2982229200339B87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				0299CFFD2982229200339B87 /* AppDelegate.swift */,
 				0299CFFF2982229200339B87 /* SceneDelegate.swift */,
 				0299D0012982229200339B87 /* ViewController.swift */,
+				0274DF392982D7A300347066 /* EggView.swift */,
 				0299D0032982229200339B87 /* Main.storyboard */,
 				0299D0062982229400339B87 /* Assets.xcassets */,
 				0299D0082982229400339B87 /* LaunchScreen.storyboard */,
@@ -162,6 +165,7 @@
 			files = (
 				0299D0022982229200339B87 /* ViewController.swift in Sources */,
 				0299CFFE2982229200339B87 /* AppDelegate.swift in Sources */,
+				0274DF3A2982D7A300347066 /* EggView.swift in Sources */,
 				0299D0002982229200339B87 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

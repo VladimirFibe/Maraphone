@@ -2,6 +2,7 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
+    let times = ["soft": 5, "medium": 7, "hard": 12]
     var counter = 60
     var timer: Timer?
     let titleLabel: UILabel = {
@@ -35,6 +36,7 @@ class ViewController: UIViewController {
         for title in titles {
             let egg = EggView()
             egg.config(with: title)
+            egg.button.addTarget(self, action: #selector(hardnessSelected), for: .primaryActionTriggered)
             eggStack.addArrangedSubview(egg)
         }
         eggStack.axis = .horizontal
@@ -54,17 +56,26 @@ class ViewController: UIViewController {
     }
     
     @objc func hardnessSelected(_ sender: UIButton) {
-        let times = [10, 42, 72]
-        guard sender.tag >= 0 && sender.tag < times.count  else { return }
-        counter = times[sender.tag]
-        if timer != nil {
-            timer?.invalidate()
+        let hardness = sender.currentTitle ?? ""
+        if hardness == "soft" {
+            print(5)
+        } else if hardness == "medium" {
+            print(7)
+        } else {
+            print(12)
         }
-        timer = Timer.scheduledTimer(timeInterval: 1,
-                                     target: self,
-                                     selector: #selector(updateCounter),
-                                     userInfo: nil,
-                                     repeats: true)
+//        print(times[hardness] ?? 0)
+//        let times = [10, 42, 72]
+//        guard sender.tag >= 0 && sender.tag < times.count  else { return }
+//        counter = times[sender.tag]
+//        if timer != nil {
+//            timer?.invalidate()
+//        }
+//        timer = Timer.scheduledTimer(timeInterval: 1,
+//                                     target: self,
+//                                     selector: #selector(updateCounter),
+//                                     userInfo: nil,
+//                                     repeats: true)
     }
     @objc func updateCounter() {
         if counter > 0 {
@@ -78,40 +89,3 @@ class ViewController: UIViewController {
     }
 }
 
-final class EggView: UIView {
-    let imageView = UIImageView()
-    let button = UIButton(type: .system)
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupUI()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    private func setupUI() {
-        addSubview(imageView)
-        addSubview(button)
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        button.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            imageView.topAnchor.constraint(equalTo: topAnchor),
-            imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            imageView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            
-            button.topAnchor.constraint(equalTo: topAnchor),
-            button.leadingAnchor.constraint(equalTo: leadingAnchor),
-            button.trailingAnchor.constraint(equalTo: trailingAnchor),
-            button.bottomAnchor.constraint(equalTo: bottomAnchor)
-        ])
-    }
-    
-    func config(with title: String) {
-        button.setTitle(title, for: .normal)
-        imageView.image = UIImage(named: title)
-        imageView.contentMode = .scaleAspectFit
-    }
-}
