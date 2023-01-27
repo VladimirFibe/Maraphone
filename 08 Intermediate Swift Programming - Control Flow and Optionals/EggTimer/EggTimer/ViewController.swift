@@ -2,21 +2,26 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
-    let times = ["soft": 5, "medium": 7, "hard": 12]
-    var counter = 60
+    let eggTimes = ["Soft": 5.0, "Medium": 7.0, "Hard": 12.0]
+    var totalTime = 50.0
+    var secondPassed = 0.0
     var timer: Timer?
     let titleLabel: UILabel = {
         $0.text = "Чего изволите?"
         $0.textColor = .darkGray
         $0.numberOfLines = 0
-        $0.font = UIFont.systemFont(ofSize: 30, weight: .regular)
+        $0.font = UIFont.systemFont(ofSize: 30, weight: .bold)
         $0.minimumScaleFactor = 12
         return $0
     }(UILabel())
     
-    let softButton = UIButton(type: .system)
-    let mediumButton  = UIButton(type: .system)
-    let hardButton = UIButton(type: .system)
+    let progressBar: UIProgressView = {
+        $0.trackTintColor = .gray
+        $0.progressTintColor = .yellow
+        $0.backgroundColor = .gray
+        $0.progress = 0.0
+        return $0
+    }(UIProgressView(progressViewStyle: .bar))
     var player: AVAudioPlayer!
     
     func playSound() {
@@ -35,55 +40,61 @@ class ViewController: UIViewController {
         let titles = ["soft", "medium", "hard"]
         for title in titles {
             let egg = EggView()
-            egg.config(with: title)
-            egg.button.addTarget(self, action: #selector(hardnessSelected), for: .primaryActionTriggered)
+            egg.config(self, action: #selector(hardnessSelected), with: title)
             eggStack.addArrangedSubview(egg)
         }
         eggStack.axis = .horizontal
         eggStack.alignment = .fill
         eggStack.distribution = .fillEqually
         eggStack.spacing = 10
-        let stack = UIStackView(arrangedSubviews: [titleLabel, eggStack])
+        let progressContainer = UIView()
+        let stack = UIStackView(arrangedSubviews: [titleLabel, eggStack, progressContainer])
+        view.addSubview(stack)
+        progressContainer.addSubview(progressBar)
         stack.axis = .vertical
         stack.alignment = .center
         stack.distribution = .fillEqually
-        view.addSubview(stack)
+        
         stack.translatesAutoresizingMaskIntoConstraints = false
-        stack.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor).isActive = true
-        stack.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor).isActive = true
-        stack.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor).isActive  = true
-        stack.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        progressContainer.translatesAutoresizingMaskIntoConstraints = false
+        progressBar.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            stack.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor),
+            stack.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor),
+            stack.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor),
+            stack.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            progressBar.heightAnchor.constraint(equalToConstant: 5.0),
+            progressBar.centerYAnchor.constraint(equalTo: progressContainer.centerYAnchor),
+            progressBar.leadingAnchor.constraint(equalTo: progressContainer.leadingAnchor),
+            progressBar.trailingAnchor.constraint(equalTo: progressContainer.trailingAnchor),
+            progressContainer.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.9)
+        ])
     }
     
     @objc func hardnessSelected(_ sender: UIButton) {
-        let hardness = sender.currentTitle ?? ""
-        if hardness == "soft" {
-            print(5)
-        } else if hardness == "medium" {
-            print(7)
-        } else {
-            print(12)
+        let hardness = sender.titleLabel?.text ?? ""
+        guard let value = eggTimes[hardness] else { return }
+        totalTime = value
+        secondPassed = 0
+        if timer != nil {
+            timer?.invalidate()
         }
-//        print(times[hardness] ?? 0)
-//        let times = [10, 42, 72]
-//        guard sender.tag >= 0 && sender.tag < times.count  else { return }
-//        counter = times[sender.tag]
-//        if timer != nil {
-//            timer?.invalidate()
-//        }
-//        timer = Timer.scheduledTimer(timeInterval: 1,
-//                                     target: self,
-//                                     selector: #selector(updateCounter),
-//                                     userInfo: nil,
-//                                     repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1,
+                                     target: self,
+                                     selector: #selector(updateCounter),
+                                     userInfo: nil,
+                                     repeats: true)
     }
+    
     @objc func updateCounter() {
-        if counter > 0 {
-            counter -= 1
-            titleLabel.text = "\(counter) seconds"
+        if secondPassed < totalTime - 1 {
+            secondPassed += 1
+            progressBar.progress = Float(secondPassed / totalTime)
+            titleLabel.text = String(format: "%.0f seconds", (totalTime - secondPassed))
         } else {
             timer?.invalidate()
             titleLabel.text = "Ready"
+            progressBar.progress = 1.0
             playSound()
         }
     }

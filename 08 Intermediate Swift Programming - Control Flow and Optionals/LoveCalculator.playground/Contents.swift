@@ -12,4 +12,16 @@ func loveCalculator() {
     }
 }
 
+func loveSwitch() {
+    let loveScore = Int.random(in: 0..<101)
+    print("loveScore = ", loveScore)
+    switch loveScore {
+    case 81...: print("You love each ather like Kanye loves Kanye.")
+    case 41...80: print("You go together like Coke and Mentos")
+    case ...40: print("You'll be forever alone")
+    default: print("Error")
+    }
+}
+
 loveCalculator()
+loveSwitch()
