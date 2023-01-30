@@ -25,6 +25,8 @@ final class QuizzlerViewController: BaseController {
         "Three + Eight is less than Ten"
     ]
     
+    var questionNumber = 0
+    
     lazy var stack = UIStackView(arrangedSubviews: [questionLabel]).then {
         $0.axis = .vertical
         $0.spacing = 20
@@ -32,11 +34,12 @@ final class QuizzlerViewController: BaseController {
     
     func answerButtonPressed(_ action: UIAction) {
         print((action.sender as? UIButton)?.titleLabel?.text ?? "noname")
+        questionNumber += 1
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        questionLabel.text = quiz[0]
+        questionLabel.text = quiz[questionNumber]
     }
 }
 
