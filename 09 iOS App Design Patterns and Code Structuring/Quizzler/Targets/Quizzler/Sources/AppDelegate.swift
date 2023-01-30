@@ -1,6 +1,4 @@
 import UIKit
-import QuizzlerKit
-import QuizzlerUI
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,9 +13,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let viewController = QuizzlerViewController()
         window?.rootViewController = viewController
         window?.makeKeyAndVisible()
-//        QuizzlerKit.hello()
-//        QuizzlerUI.hello()
-//
         return true
     }
 

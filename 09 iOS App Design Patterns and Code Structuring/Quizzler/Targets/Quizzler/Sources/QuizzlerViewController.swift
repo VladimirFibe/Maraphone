@@ -8,6 +8,7 @@ final class QuizzlerViewController: BaseController {
         $0.numberOfLines = 0
     }
     var answerButtons: [UIButton] = []
+    
     let bubblesView = UIImageView(image: Res.Images.background)
     
     let progressBar = UIProgressView().then {
@@ -20,6 +21,14 @@ final class QuizzlerViewController: BaseController {
     lazy var stack = UIStackView(arrangedSubviews: [questionLabel]).then {
         $0.axis = .vertical
         $0.spacing = 20
+    }
+    func answerButtonPressed(_ action: UIAction) {
+        print((action.sender as? UIButton)?.titleLabel?.text ?? "noname")
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        questionLabel.text = "Four + Two is equal to Six"
     }
 }
 
@@ -37,9 +46,12 @@ extension QuizzlerViewController {
             bubblesView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             bubblesView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             
-            stack.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 1),
-            view.trailingAnchor.constraint(equalToSystemSpacingAfter: stack.trailingAnchor, multiplier: 1),
-            view.safeAreaLayoutGuide.bottomAnchor.constraint(equalToSystemSpacingBelow: stack.bottomAnchor, multiplier: 1)
+            stack.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor,
+                                           multiplier: 1),
+            view.trailingAnchor.constraint(equalToSystemSpacingAfter: stack.trailingAnchor,
+                                           multiplier: 1),
+            view.safeAreaLayoutGuide.bottomAnchor.constraint(equalToSystemSpacingBelow: stack.bottomAnchor,
+                                                             multiplier: 1)
         ])
     }
     
@@ -71,7 +83,7 @@ extension QuizzlerViewController {
             let button = UIButton(type: .system)
             button.configuration = config
             button.addAction(UIAction { action in
-                print((action.sender as? UIButton)?.titleLabel?.text ?? "noname")
+                self.answerButtonPressed(action)
             }, for: .primaryActionTriggered)
             answerButtons.append(button)
             stack.addArrangedSubview(button)

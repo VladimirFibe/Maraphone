@@ -2,10 +2,12 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
-    let eggTimes = ["Soft": 5.0, "Medium": 7.0, "Hard": 12.0]
-    var totalTime = 50.0
-    var secondPassed = 0.0
+    let eggTimes: [String: Float] = ["Soft": 5.0, "Medium": 7.0, "Hard": 12.0]
+    var totalTime: Float = 50.0
+    var secondPassed: Float = 0.0
     var timer: Timer?
+    var player: AVAudioPlayer!
+    
     let titleLabel: UILabel = {
         $0.text = "Чего изволите?"
         $0.textColor = .darkGray
@@ -22,7 +24,6 @@ class ViewController: UIViewController {
         $0.progress = 0.0
         return $0
     }(UIProgressView(progressViewStyle: .bar))
-    var player: AVAudioPlayer!
     
     func playSound() {
         guard let url = Bundle.main.url(forResource: "alarm", withExtension: "mp3") else { return }
@@ -89,7 +90,7 @@ class ViewController: UIViewController {
     @objc func updateCounter() {
         if secondPassed < totalTime - 1 {
             secondPassed += 1
-            progressBar.progress = Float(secondPassed / totalTime)
+            progressBar.progress = secondPassed / totalTime
             titleLabel.text = String(format: "%.0f seconds", (totalTime - secondPassed))
         } else {
             timer?.invalidate()
