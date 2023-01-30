@@ -18,17 +18,25 @@ final class QuizzlerViewController: BaseController {
         $0.trackTintColor = Res.Color.trackTint
         $0.heightAnchor.constraint(equalToConstant: 10).isActive = true
     }
+    
+    let quiz = [
+        "Four + Two is equal to Six",
+        "Five - Three is greater than One",
+        "Three + Eight is less than Ten"
+    ]
+    
     lazy var stack = UIStackView(arrangedSubviews: [questionLabel]).then {
         $0.axis = .vertical
         $0.spacing = 20
     }
+    
     func answerButtonPressed(_ action: UIAction) {
         print((action.sender as? UIButton)?.titleLabel?.text ?? "noname")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        questionLabel.text = "Four + Two is equal to Six"
+        questionLabel.text = quiz[0]
     }
 }
 
