@@ -20,9 +20,9 @@ final class QuizzlerViewController: BaseController {
     }
     
     let quiz = [
-        "Four + Two is equal to Six",
-        "Five - Three is greater than One",
-        "Three + Eight is less than Ten"
+        ["Four + Two is equal to Six", "True"],
+        ["Five - Three is greater than One", "True"],
+        ["Three + Eight is less than Ten", "False"]
     ]
     
     var questionNumber = 0
@@ -33,13 +33,32 @@ final class QuizzlerViewController: BaseController {
     }
     
     func answerButtonPressed(_ action: UIAction) {
-        print((action.sender as? UIButton)?.titleLabel?.text ?? "noname")
+        let tag = (action.sender as? UIButton)?.tag
+        let currentTitle = (action.sender as? UIButton)?.currentTitle
+        let userAnswer = (action.sender as? UIButton)?.titleLabel?.text ?? "noname"
+        let actualAnswer = quiz[questionNumber][1]
+        print("Current Title = ", currentTitle)
+        print("Tag = ", tag)
+        print(userAnswer)
+        if userAnswer == actualAnswer {
+            print("Right!")
+        } else {
+            print("Wrong!")
+        }
         questionNumber += 1
+        if questionNumber == quiz.count  {
+            questionNumber = 0
+        }
+        updateUI()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        questionLabel.text = quiz[questionNumber]
+        updateUI()
+    }
+    
+    private func updateUI() {
+        questionLabel.text = quiz[questionNumber][0]
     }
 }
 
@@ -92,6 +111,7 @@ extension QuizzlerViewController {
             }
             config.baseForegroundColor = .white
             let button = UIButton(type: .system)
+            button.tag = answerButtons.count
             button.configuration = config
             button.addAction(UIAction { action in
                 self.answerButtonPressed(action)
