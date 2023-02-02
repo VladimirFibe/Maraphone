@@ -8,9 +8,9 @@ class ViewController: BaseController {
     lazy var progressBar = quizzlerView.progressBar
     
     let quiz = [
-        ["Four + Two is equal to Six", "True"],
-        ["Five - Three is greater than One", "True"],
-        ["Three + Eight is less than Ten", "False"]
+        Question(text: "Four + Two is equal to Six", answer: 0),
+        Question(text: "Five - Three is greater than One", answer: 0),
+        Question(text: "Three + Eight is less than Ten", answer: 1)
     ]
     
     var questionNumber = 0 {
@@ -23,10 +23,9 @@ class ViewController: BaseController {
     }
     
     func answerButtonPressed(_ index: Int) {
-        let userAnswer = index == 0 ? "True" : "False"
-        let actualAnswer = quiz[questionNumber][1]
+        let actualAnswer = quiz[questionNumber].answer
         print(questionNumber)
-        if userAnswer == actualAnswer {
+        if index == actualAnswer {
             print("Right")
         } else {
             print("Wrong")
@@ -36,7 +35,7 @@ class ViewController: BaseController {
     
     func updateUI() {
         print("DEBUG: \(#function)")
-        questionLabel.text = quiz[questionNumber][0]
+        questionLabel.text = quiz[questionNumber].text
     }
 }
 
