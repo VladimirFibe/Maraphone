@@ -24,6 +24,7 @@
 		02487B1F298C620700A735FC /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02487B1E298C620700A735FC /* 1.jpg */; };
 		02487B21298C6DDF00A735FC /* Quizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02487B20298C6DDF00A735FC /* Quizzler.swift */; };
 		02487B23298C767400A735FC /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02487B22298C767400A735FC /* Question.swift */; };
+		02487B25298C814000A735FC /* Questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 02487B24298C814000A735FC /* Questions.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		02487B1E298C620700A735FC /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		02487B20298C6DDF00A735FC /* Quizzler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quizzler.swift; sourceTree = "<group>"; };
 		02487B22298C767400A735FC /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		02487B24298C814000A735FC /* Questions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Questions.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			children = (
 				02487B20298C6DDF00A735FC /* Quizzler.swift */,
 				02487B22298C767400A735FC /* Question.swift */,
+				02487B24298C814000A735FC /* Questions.json */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02487B25298C814000A735FC /* Questions.json in Resources */,
 				02487AFF298BE9D100A735FC /* LaunchScreen.storyboard in Resources */,
 				02487B1F298C620700A735FC /* 1.jpg in Resources */,
 				02487AFC298BE9D100A735FC /* Assets.xcassets in Resources */,

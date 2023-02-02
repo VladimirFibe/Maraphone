@@ -6,12 +6,10 @@ class ViewController: BaseController {
     
     lazy var questionLabel = quizzlerView.questionLabel
     lazy var progressBar = quizzlerView.progressBar
+    lazy var answerButtons = quizzlerView.answerButtons
     
-    let quiz = [
-        Question(text: "Four + Two is equal to Six", answer: 0),
-        Question(text: "Five - Three is greater than One", answer: 0),
-        Question(text: "Three + Eight is less than Ten", answer: 1)
-    ]
+    let quiz = Question.fetch()
+
     
     var questionNumber = 0 {
         didSet {
@@ -24,18 +22,20 @@ class ViewController: BaseController {
     
     func answerButtonPressed(_ index: Int) {
         let actualAnswer = quiz[questionNumber].answer
-        print(questionNumber)
         if index == actualAnswer {
-            print("Right")
+            answerButtons[index].configuration?.background.backgroundColor = .green
         } else {
-            print("Wrong")
+            answerButtons[index].configuration?.background.backgroundColor = .red
         }
-        questionNumber += 1
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.answerButtons[index].configuration?.background.backgroundColor = .clear
+            self.questionNumber += 1
+        }
     }
     
     func updateUI() {
-        print("DEBUG: \(#function)")
         questionLabel.text = quiz[questionNumber].text
+        progressBar.progress = (Float(questionNumber + 1)) / Float(quiz.count)
     }
 }
 

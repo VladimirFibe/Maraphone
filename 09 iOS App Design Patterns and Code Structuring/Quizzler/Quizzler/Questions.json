@@ -1,0 +1,14 @@
+[
+    {
+        "text": "Four + Two is equal to Six",
+        "answer": 0
+    },
+    {
+        "text": "Five - Three is greater than One",
+        "answer": 0
+    },
+    {
+        "text": "Three + Eight is less than Ten",
+        "answer": 1
+    }
+]
