@@ -85,11 +85,3 @@ extension QuizzlerView {
         }
     }
 }
-
-
-struct ViewControllerRepresentable_Previews: PreviewProvider {
-    static var previews: some View {
-        ViewControllerRepresentable()
-            .ignoresSafeArea()
-    }
-}

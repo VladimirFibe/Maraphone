@@ -7,8 +7,36 @@ class ViewController: BaseController {
     lazy var questionLabel = quizzlerView.questionLabel
     lazy var progressBar = quizzlerView.progressBar
     
+    let quiz = [
+        ["Four + Two is equal to Six", "True"],
+        ["Five - Three is greater than One", "True"],
+        ["Three + Eight is less than Ten", "False"]
+    ]
+    
+    var questionNumber = 0 {
+        didSet {
+            if questionNumber == quiz.count {
+                questionNumber = 0
+            }
+            updateUI()
+        }
+    }
+    
     func answerButtonPressed(_ index: Int) {
-        print(index)
+        let userAnswer = index == 0 ? "True" : "False"
+        let actualAnswer = quiz[questionNumber][1]
+        print(questionNumber)
+        if userAnswer == actualAnswer {
+            print("Right")
+        } else {
+            print("Wrong")
+        }
+        questionNumber += 1
+    }
+    
+    func updateUI() {
+        print("DEBUG: \(#function)")
+        questionLabel.text = quiz[questionNumber][0]
     }
 }
 
@@ -36,7 +64,14 @@ extension ViewController {
     override func configureAppearance() {
         super.configureAppearance()
         view.backgroundColor = Res.Color.background
-        questionLabel.text = "5 + 3 = 8"
+        questionNumber = 0
         quizzlerView.answerButtonPressed = answerButtonPressed
+    }
+}
+
+struct ViewControllerRepresentable_Previews: PreviewProvider {
+    static var previews: some View {
+        ViewControllerRepresentable()
+            .ignoresSafeArea()
     }
 }

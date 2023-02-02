@@ -22,6 +22,7 @@
 		02487B19298BED0300A735FC /* QuizzlerViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02487B18298BED0300A735FC /* QuizzlerViewRepresentable.swift */; };
 		02487B1B298BED8F00A735FC /* ViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02487B1A298BED8F00A735FC /* ViewControllerRepresentable.swift */; };
 		02487B1F298C620700A735FC /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02487B1E298C620700A735FC /* 1.jpg */; };
+		02487B21298C6DDF00A735FC /* Quizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02487B20298C6DDF00A735FC /* Quizzler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		02487B1A298BED8F00A735FC /* ViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRepresentable.swift; sourceTree = "<group>"; };
 		02487B1C298C61D400A735FC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		02487B1E298C620700A735FC /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		02487B20298C6DDF00A735FC /* Quizzler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quizzler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 		02487B09298BEA6C00A735FC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				02487B20298C6DDF00A735FC /* Quizzler.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				02487AF3298BE9D100A735FC /* AppDelegate.swift in Sources */,
 				02487B17298BECBF00A735FC /* QuizzlerView.swift in Sources */,
 				02487B11298BEB0700A735FC /* UIView+Extension.swift in Sources */,
+				02487B21298C6DDF00A735FC /* Quizzler.swift in Sources */,
 				02487B12298BEB0700A735FC /* BaseController.swift in Sources */,
 				02487B1B298BED8F00A735FC /* ViewControllerRepresentable.swift in Sources */,
 				02487AF5298BE9D100A735FC /* SceneDelegate.swift in Sources */,
