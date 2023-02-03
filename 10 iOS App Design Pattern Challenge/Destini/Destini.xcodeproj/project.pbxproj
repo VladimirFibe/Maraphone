@@ -16,6 +16,12 @@
 		02B12DC1298D17ED00ED65FC /* 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 02B12DC0298D17ED00ED65FC /* 1.gif */; };
 		02B12DC4298D180800ED65FC /* AppBreweryBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = 02B12DC2298D180800ED65FC /* AppBreweryBanner.png */; };
 		02B12DC5298D180800ED65FC /* readme-end-banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 02B12DC3298D180800ED65FC /* readme-end-banner.png */; };
+		02B12DC7298D25C300ED65FC /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B12DC6298D25C300ED65FC /* BaseView.swift */; };
+		02B12DC9298D25D200ED65FC /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B12DC8298D25D200ED65FC /* BaseController.swift */; };
+		02B12DCB298D25DC00ED65FC /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B12DCA298D25DC00ED65FC /* Then.swift */; };
+		02B12DCD298D25EA00ED65FC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B12DCC298D25EA00ED65FC /* UIView+Extension.swift */; };
+		02B12DCF298D26E000ED65FC /* ViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B12DCE298D26E000ED65FC /* ViewControllerRepresentable.swift */; };
+		02B12DD1298D2AA300ED65FC /* DestiniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B12DD0298D2AA200ED65FC /* DestiniView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +37,12 @@
 		02B12DC0298D17ED00ED65FC /* 1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1.gif; sourceTree = "<group>"; };
 		02B12DC2298D180800ED65FC /* AppBreweryBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppBreweryBanner.png; sourceTree = "<group>"; };
 		02B12DC3298D180800ED65FC /* readme-end-banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "readme-end-banner.png"; sourceTree = "<group>"; };
+		02B12DC6298D25C300ED65FC /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseView.swift; path = "../../../09 iOS App Design Patterns and Code Structuring/Quizzler/Quizzler/BaseView.swift"; sourceTree = "<group>"; };
+		02B12DC8298D25D200ED65FC /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseController.swift; path = "../../../09 iOS App Design Patterns and Code Structuring/Quizzler/Quizzler/BaseController.swift"; sourceTree = "<group>"; };
+		02B12DCA298D25DC00ED65FC /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Then.swift; path = "../../../09 iOS App Design Patterns and Code Structuring/Quizzler/Quizzler/Then.swift"; sourceTree = "<group>"; };
+		02B12DCC298D25EA00ED65FC /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "../../../09 iOS App Design Patterns and Code Structuring/Quizzler/Quizzler/UIView+Extension.swift"; sourceTree = "<group>"; };
+		02B12DCE298D26E000ED65FC /* ViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		02B12DD0298D2AA200ED65FC /* DestiniView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestiniView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +80,13 @@
 				02B12DAA298D178B00ED65FC /* AppDelegate.swift */,
 				02B12DAC298D178B00ED65FC /* SceneDelegate.swift */,
 				02B12DAE298D178B00ED65FC /* ViewController.swift */,
+				02B12DD0298D2AA200ED65FC /* DestiniView.swift */,
+				02B12DCE298D26E000ED65FC /* ViewControllerRepresentable.swift */,
 				02B12DB0298D178B00ED65FC /* Main.storyboard */,
+				02B12DCC298D25EA00ED65FC /* UIView+Extension.swift */,
+				02B12DCA298D25DC00ED65FC /* Then.swift */,
+				02B12DC8298D25D200ED65FC /* BaseController.swift */,
+				02B12DC6298D25C300ED65FC /* BaseView.swift */,
 				02B12DB3298D178C00ED65FC /* Assets.xcassets */,
 				02B12DB5298D178C00ED65FC /* LaunchScreen.storyboard */,
 				02B12DB8298D178C00ED65FC /* Info.plist */,
@@ -161,8 +179,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				02B12DAF298D178B00ED65FC /* ViewController.swift in Sources */,
+				02B12DCD298D25EA00ED65FC /* UIView+Extension.swift in Sources */,
 				02B12DAB298D178B00ED65FC /* AppDelegate.swift in Sources */,
+				02B12DC9298D25D200ED65FC /* BaseController.swift in Sources */,
 				02B12DAD298D178B00ED65FC /* SceneDelegate.swift in Sources */,
+				02B12DCF298D26E000ED65FC /* ViewControllerRepresentable.swift in Sources */,
+				02B12DCB298D25DC00ED65FC /* Then.swift in Sources */,
+				02B12DC7298D25C300ED65FC /* BaseView.swift in Sources */,
+				02B12DD1298D2AA300ED65FC /* DestiniView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
