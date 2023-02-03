@@ -15,6 +15,7 @@ final class QuizzlerView: BaseView {
         $0.text = "Text"
         $0.textColor = .white
         $0.font = .boldSystemFont(ofSize: 30)
+        $0.heightAnchor.constraint(equalToConstant: 50).isActive = true
         $0.numberOfLines = 1
     }
     
@@ -33,6 +34,7 @@ final class QuizzlerView: BaseView {
     let stack = UIStackView().then {
         $0.axis = .vertical
         $0.spacing = 20
+        $0.distribution = .fill
     }
     
     func configure(with answers: [String]) {
@@ -87,7 +89,7 @@ extension QuizzlerView {
     func configureButtons() {
         for i in 0..<3 {
             var config = UIButton.Configuration.plain()
-            config.buttonSize = .large
+            config.buttonSize = .medium
             config.cornerStyle = .large
             config.titleAlignment = .center
             config.titlePadding = 4.0
@@ -97,12 +99,13 @@ extension QuizzlerView {
             config.title = "Answer"
             config.titleTextAttributesTransformer = UIConfigurationTextAttributesTransformer { incoming in
               var outgoing = incoming
-              outgoing.font = UIFont.preferredFont(forTextStyle: .largeTitle)
+              outgoing.font = UIFont.preferredFont(forTextStyle: .title1)
               return outgoing
             }
             config.baseForegroundColor = .white
             let button = UIButton(type: .system)
             button.tag = i
+            button.heightAnchor.constraint(equalToConstant: 70).isActive = true
             button.configuration = config
             button.addAction(UIAction { action in
                 self.answerButtonPressed?(i)
