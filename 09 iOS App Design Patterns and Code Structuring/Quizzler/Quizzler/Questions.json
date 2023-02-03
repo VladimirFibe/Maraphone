@@ -1,14 +1,12 @@
 [
-    {
-        "text": "Four + Two is equal to Six",
-        "answer": 0
-    },
-    {
-        "text": "Five - Three is greater than One",
-        "answer": 0
-    },
-    {
-        "text": "Three + Eight is less than Ten",
-        "answer": 1
-    }
+    {"text": "Which is the largest organ in the human body?", "answers": ["Heart", "Skin", "Large Intestine"], "answer": 1},
+    {"text": "Five dollars is worth how many nickels?", "answers": ["25", "50", "100"], "answer": 2},
+    {"text": "What do the letters in the GMT time zone stand for?", "answers": ["Global Meridian Time", "Greenwich Mean Time", "General Median Time"], "answer": 2},
+    {"text": "What is the French word for 'hat'?", "answers": ["Chapeau", "Écharpe", "Bonnet"], "answer": 0},
+    {"text": "In past times, what would a gentleman keep in his fob pocket?", "answers": ["Notebook", "Handkerchief", "Watch"], "answer": 2},
+    {"text": "How would one say goodbye in Spanish?", "answers": ["Au Revoir", "Adiós", "Salir"], "answer": 1},
+    {"text": "Which of these colours is NOT featured in the logo for Google?", "answers": ["Green", "Orange", "Blue"], "answer": 1},
+    {"text": "What alcoholic drink is made from molasses?", "answers": ["Rum", "Whisky", "Gin"], "answer": 0},
+    {"text": "What type of animal was Harambe?", "answers": ["Panda", "Gorilla", "Crocodile"], "answer": 1},
+    {"text": "Where is Tasmania located?", "answers": ["Indonesia", "Australia", "Scotland"], "answer": 1}
 ]

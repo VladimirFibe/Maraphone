@@ -25,6 +25,10 @@
 		02487B21298C6DDF00A735FC /* Quizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02487B20298C6DDF00A735FC /* Quizzler.swift */; };
 		02487B23298C767400A735FC /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02487B22298C767400A735FC /* Question.swift */; };
 		02487B25298C814000A735FC /* Questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 02487B24298C814000A735FC /* Questions.json */; };
+		02487B27298CB49700A735FC /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02487B26298CB49700A735FC /* QuizBrain.swift */; };
+		02487B29298CDFE700A735FC /* TrueFalse.json in Resources */ = {isa = PBXBuildFile; fileRef = 02487B28298CDFE700A735FC /* TrueFalse.json */; };
+		02487B2C298CE8D300A735FC /* AppBreweryBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = 02487B2A298CE8D300A735FC /* AppBreweryBanner.png */; };
+		02487B2D298CE8D300A735FC /* readme-end-banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 02487B2B298CE8D300A735FC /* readme-end-banner.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +53,10 @@
 		02487B20298C6DDF00A735FC /* Quizzler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quizzler.swift; sourceTree = "<group>"; };
 		02487B22298C767400A735FC /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		02487B24298C814000A735FC /* Questions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Questions.json; sourceTree = "<group>"; };
+		02487B26298CB49700A735FC /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
+		02487B28298CDFE700A735FC /* TrueFalse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TrueFalse.json; sourceTree = "<group>"; };
+		02487B2A298CE8D300A735FC /* AppBreweryBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppBreweryBanner.png; sourceTree = "<group>"; };
+		02487B2B298CE8D300A735FC /* readme-end-banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "readme-end-banner.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +139,8 @@
 				02487B20298C6DDF00A735FC /* Quizzler.swift */,
 				02487B22298C767400A735FC /* Question.swift */,
 				02487B24298C814000A735FC /* Questions.json */,
+				02487B28298CDFE700A735FC /* TrueFalse.json */,
+				02487B26298CB49700A735FC /* QuizBrain.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -156,6 +166,8 @@
 		02487B1D298C61E400A735FC /* img */ = {
 			isa = PBXGroup;
 			children = (
+				02487B2A298CE8D300A735FC /* AppBreweryBanner.png */,
+				02487B2B298CE8D300A735FC /* readme-end-banner.png */,
 				02487B1E298C620700A735FC /* 1.jpg */,
 			);
 			path = img;
@@ -224,6 +236,9 @@
 				02487B1F298C620700A735FC /* 1.jpg in Resources */,
 				02487AFC298BE9D100A735FC /* Assets.xcassets in Resources */,
 				02487AFA298BE9D100A735FC /* Main.storyboard in Resources */,
+				02487B2D298CE8D300A735FC /* readme-end-banner.png in Resources */,
+				02487B2C298CE8D300A735FC /* AppBreweryBanner.png in Resources */,
+				02487B29298CDFE700A735FC /* TrueFalse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +258,7 @@
 				02487B11298BEB0700A735FC /* UIView+Extension.swift in Sources */,
 				02487B21298C6DDF00A735FC /* Quizzler.swift in Sources */,
 				02487B23298C767400A735FC /* Question.swift in Sources */,
+				02487B27298CB49700A735FC /* QuizBrain.swift in Sources */,
 				02487B12298BEB0700A735FC /* BaseController.swift in Sources */,
 				02487B1B298BED8F00A735FC /* ViewControllerRepresentable.swift in Sources */,
 				02487AF5298BE9D100A735FC /* SceneDelegate.swift in Sources */,

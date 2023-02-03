@@ -1,0 +1,14 @@
+[
+    {"text": "A slug's blood is green.", ""answer"": 0},
+    {"text": "Approximately one quarter of human bones are in the feet.", "answers": ["True", "False"], "answer": 0},
+    {"text": "The total surface area of two human lungs is approximately 70 square metres.", "answers": ["True", "False"], "answer": 0},
+    {"text": "In West Virginia, USA, if you accidentally hit an animal with your car, you are free to take it home to eat.", "answers": ["True", "False"], "answer": 0},
+    {"text": "In London, UK, if you happen to die in the House of Parliament, you are technically entitled to a state funeral, because the building is considered too sacred a place.", "answers": ["True", "False"], "answer": 1},
+    {"text": "It is illegal to pee in the Ocean in Portugal.", "answers": ["True", "False"], "answer": 0},
+    {"text": "You can lead a cow down stairs but not up stairs.", "answers": ["True", "False"], "answer": 1},
+    {"text": "Google was originally called 'Backrub'.", "answers": ["True", "False"], "answer": 0},
+    {"text": "Buzz Aldrin's mother's maiden name was 'Moon'.", "answers": ["True", "False"], "answer": 0},
+    {"text": "The loudest sound produced by any animal is 188 decibels. That animal is the African Elephant.", "answers": ["True", "False"], "answer": 1},
+    {"text": "No piece of square dry paper can be folded in half more than 7 times.", "answers": ["True", "False"], "answer": 1},
+    {"text": "Chocolate affects a dog's heart and nervous system; a few ounces are enough to kill a small dog.", "answers": ["True", "False"], "answer": 0}
+]

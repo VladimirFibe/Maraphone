@@ -9,7 +9,7 @@ func exercise() {
         let email: String?
         var followers: Int
         var isActive: Bool
-        
+
         func logStatus() {
             if isActive {
                 print("\(name) is working hard")
@@ -33,7 +33,7 @@ func exercise() {
     // sometime later
     musk.isActive = false
     musk.logStatus()
-    
+
 }
 
 exercise()

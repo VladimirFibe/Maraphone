@@ -11,6 +11,13 @@ final class QuizzlerView: BaseView {
         $0.numberOfLines = 0
     }
     
+    let scoreLabel = UILabel().then {
+        $0.text = "Text"
+        $0.textColor = .white
+        $0.font = .boldSystemFont(ofSize: 30)
+        $0.numberOfLines = 1
+    }
+    
     var answerButtons: [UIButton] = []
     
     let progressBar = UIProgressView().then {
@@ -21,9 +28,23 @@ final class QuizzlerView: BaseView {
         $0.heightAnchor.constraint(equalToConstant: 10).isActive = true
     }
     
+    let view = UIView()
+
     let stack = UIStackView().then {
         $0.axis = .vertical
         $0.spacing = 20
+    }
+    
+    func configure(with answers: [String]) {
+        for index in answerButtons.indices {
+            let button = answerButtons[index]
+            if index < answers.count {
+                button.setTitle(answers[index], for: .normal)
+                button.isHidden = false
+            } else {
+                button.isHidden = true
+            }
+        }
     }
 }
 
@@ -37,12 +58,17 @@ extension QuizzlerView {
     override func layoutViews() {
         super.layoutViews()
         NSLayoutConstraint.activate([
+            stack.topAnchor.constraint(equalToSystemSpacingBelow: topAnchor, multiplier: 2),
             stack.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor,
-                                           multiplier: 1),
+                                           multiplier: 2),
             trailingAnchor.constraint(equalToSystemSpacingAfter: stack.trailingAnchor,
-                                           multiplier: 1),
+                                           multiplier: 2),
             bottomAnchor.constraint(equalToSystemSpacingBelow: stack.bottomAnchor,
-                                                             multiplier: 1)
+                                    multiplier: 2),
+            questionLabel.topAnchor.constraint(equalTo: view.topAnchor),
+            questionLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            questionLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            questionLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
     
@@ -51,13 +77,15 @@ extension QuizzlerView {
     }
     
     private func setupStack() {
-        stack.addArrangedSubview(questionLabel)
+        stack.addArrangedSubview(scoreLabel)
+        view.addView(questionLabel)
+        stack.addArrangedSubview(view)
         configureButtons()
         stack.addArrangedSubview(progressBar)
     }
     
     func configureButtons() {
-        ["True", "False"].forEach {
+        for i in 0..<3 {
             var config = UIButton.Configuration.plain()
             config.buttonSize = .large
             config.cornerStyle = .large
@@ -66,7 +94,7 @@ extension QuizzlerView {
             config.background.strokeColor = Res.Color.strokeColor
             config.background.strokeWidth = 4
             config.background.backgroundColor = .clear
-            config.title = $0
+            config.title = "Answer"
             config.titleTextAttributesTransformer = UIConfigurationTextAttributesTransformer { incoming in
               var outgoing = incoming
               outgoing.font = UIFont.preferredFont(forTextStyle: .largeTitle)
@@ -74,11 +102,10 @@ extension QuizzlerView {
             }
             config.baseForegroundColor = .white
             let button = UIButton(type: .system)
-            let index = answerButtons.count
-            button.tag = index
+            button.tag = i
             button.configuration = config
             button.addAction(UIAction { action in
-                self.answerButtonPressed?(index)
+                self.answerButtonPressed?(i)
             }, for: .primaryActionTriggered)
             answerButtons.append(button)
             stack.addArrangedSubview(button)
