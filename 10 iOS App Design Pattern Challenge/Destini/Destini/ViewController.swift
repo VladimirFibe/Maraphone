@@ -1,6 +1,7 @@
 import SwiftUI
 
 class ViewController: BaseController {
+    let storyBrain = StoryBrain()
     let destiniView = DestiniView()
     
     lazy var storyLabel = destiniView.storyLabel
@@ -9,6 +10,16 @@ class ViewController: BaseController {
     let backgroundView = UIImageView(image: UIImage(named: "background")).then {
         $0.contentMode = .scaleToFill
     }
+    
+    func answerButtonPressed(_ index: Int) {
+        print(index)
+    }
+    
+    func updateUI() {
+        storyLabel.text = storyBrain.currentTitle
+        destiniView.configure(with: storyBrain.currentChoices)
+    }
+    
 }
 
 extension ViewController {
@@ -35,6 +46,14 @@ extension ViewController {
     
     override func configureAppearance() {
         super.configureAppearance()
+        destiniView.answerButtonPressed = answerButtonPressed
+        updateUI()
     }
 }
 
+struct ViewControllerRepresentable_Previews: PreviewProvider {
+    static var previews: some View {
+        ViewControllerRepresentable()
+            .ignoresSafeArea()
+    }
+}

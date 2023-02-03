@@ -17,6 +17,18 @@ final class DestiniView: BaseView {
         $0.spacing = 20
         $0.distribution = .fill
     }
+    
+    func configure(with choices: [String]) {
+        for index in choiceButtons.indices {
+            let button = choiceButtons[index]
+            if index < choices.count {
+                button.setTitle(choices[index], for: .normal)
+                button.isHidden = false
+            } else {
+                button.isHidden = true
+            }
+        }
+    }
 }
 
 extension DestiniView {
@@ -62,7 +74,7 @@ extension DestiniView {
             config.baseForegroundColor = .white
             let button = UIButton(type: .system)
             button.tag = i
-            button.heightAnchor.constraint(equalToConstant: 70).isActive = true
+            button.heightAnchor.constraint(equalToConstant: 90).isActive = true
             button.configuration = config
             button.addAction(UIAction { action in
                 self.answerButtonPressed?(i)
@@ -73,9 +85,3 @@ extension DestiniView {
     }
 }
 
-struct ViewControllerRepresentable_Previews: PreviewProvider {
-    static var previews: some View {
-        ViewControllerRepresentable()
-            .ignoresSafeArea()
-    }
-}

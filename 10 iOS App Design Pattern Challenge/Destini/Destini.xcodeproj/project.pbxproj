@@ -22,6 +22,9 @@
 		02B12DCD298D25EA00ED65FC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B12DCC298D25EA00ED65FC /* UIView+Extension.swift */; };
 		02B12DCF298D26E000ED65FC /* ViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B12DCE298D26E000ED65FC /* ViewControllerRepresentable.swift */; };
 		02B12DD1298D2AA300ED65FC /* DestiniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B12DD0298D2AA200ED65FC /* DestiniView.swift */; };
+		02B12DD3298D303C00ED65FC /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 02B12DD2298D303C00ED65FC /* 2.png */; };
+		02B12DD5298D30CA00ED65FC /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B12DD4298D30CA00ED65FC /* Story.swift */; };
+		02B12DD7298D318A00ED65FC /* StoryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B12DD6298D318A00ED65FC /* StoryBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		02B12DCC298D25EA00ED65FC /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "../../../09 iOS App Design Patterns and Code Structuring/Quizzler/Quizzler/UIView+Extension.swift"; sourceTree = "<group>"; };
 		02B12DCE298D26E000ED65FC /* ViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRepresentable.swift; sourceTree = "<group>"; };
 		02B12DD0298D2AA200ED65FC /* DestiniView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestiniView.swift; sourceTree = "<group>"; };
+		02B12DD2298D303C00ED65FC /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		02B12DD4298D30CA00ED65FC /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		02B12DD6298D318A00ED65FC /* StoryBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,8 @@
 				02B12DAC298D178B00ED65FC /* SceneDelegate.swift */,
 				02B12DAE298D178B00ED65FC /* ViewController.swift */,
 				02B12DD0298D2AA200ED65FC /* DestiniView.swift */,
+				02B12DD4298D30CA00ED65FC /* Story.swift */,
+				02B12DD6298D318A00ED65FC /* StoryBrain.swift */,
 				02B12DCE298D26E000ED65FC /* ViewControllerRepresentable.swift */,
 				02B12DB0298D178B00ED65FC /* Main.storyboard */,
 				02B12DCC298D25EA00ED65FC /* UIView+Extension.swift */,
@@ -97,6 +105,7 @@
 		02B12DBE298D179A00ED65FC /* img */ = {
 			isa = PBXGroup;
 			children = (
+				02B12DD2298D303C00ED65FC /* 2.png */,
 				02B12DC0298D17ED00ED65FC /* 1.gif */,
 				02B12DC2298D180800ED65FC /* AppBreweryBanner.png */,
 				02B12DC3298D180800ED65FC /* readme-end-banner.png */,
@@ -164,6 +173,7 @@
 			files = (
 				02B12DB7298D178C00ED65FC /* LaunchScreen.storyboard in Resources */,
 				02B12DC5298D180800ED65FC /* readme-end-banner.png in Resources */,
+				02B12DD3298D303C00ED65FC /* 2.png in Resources */,
 				02B12DB4298D178C00ED65FC /* Assets.xcassets in Resources */,
 				02B12DC1298D17ED00ED65FC /* 1.gif in Resources */,
 				02B12DC4298D180800ED65FC /* AppBreweryBanner.png in Resources */,
@@ -183,10 +193,12 @@
 				02B12DAB298D178B00ED65FC /* AppDelegate.swift in Sources */,
 				02B12DC9298D25D200ED65FC /* BaseController.swift in Sources */,
 				02B12DAD298D178B00ED65FC /* SceneDelegate.swift in Sources */,
+				02B12DD7298D318A00ED65FC /* StoryBrain.swift in Sources */,
 				02B12DCF298D26E000ED65FC /* ViewControllerRepresentable.swift in Sources */,
 				02B12DCB298D25DC00ED65FC /* Then.swift in Sources */,
 				02B12DC7298D25C300ED65FC /* BaseView.swift in Sources */,
 				02B12DD1298D2AA300ED65FC /* DestiniView.swift in Sources */,
+				02B12DD5298D30CA00ED65FC /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
