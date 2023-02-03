@@ -1,8 +1,9 @@
 
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
+![App Brewery Banner](img/AppBreweryBanner.png)
 
 #  Destini
 
+![App Brewery Banner](img/1.gif)
 ## Our Goal
 
 The goal of this challenge is to get you comfortable with implementing the MVC design pattern and thinking about the state of your app. In addition, you will be reviewing the concept of Swift Structures and using it to separate the Model from the Controller. 
@@ -48,4 +49,4 @@ In this app, you will be creating a “choose your own adventure” game similar
 
 >This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
 
-![End Banner](Documentation/readme-end-banner.png)
+![End Banner](img/readme-end-banner.png)
