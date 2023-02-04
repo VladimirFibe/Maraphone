@@ -1,14 +1,7 @@
-//
-//  StoryBrain.swift
-//  Destini
-//
-//  Created by Vladimir Fibe on 2/3/23.
-//
-
 import Foundation
 
 struct StoryBrain {
-    let stories = Story.stories
+    let stories = Story.fetchStories()
     var currentIndex = 0
     
     var currentTitle: String {
@@ -16,7 +9,15 @@ struct StoryBrain {
     }
     
     var currentChoices: [String] {
-        [stories[currentIndex].choice1,
-         stories[currentIndex].choice2]
+        stories[currentIndex].choices
+    }
+    
+    mutating func nextStory(_ index: Int) {
+        let destination = stories[currentIndex].destinations
+        if index < destination.count {
+            currentIndex = destination[index]
+        } else {
+            currentIndex = 0
+        }
     }
 }

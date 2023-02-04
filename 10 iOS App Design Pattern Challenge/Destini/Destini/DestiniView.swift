@@ -2,7 +2,7 @@ import SwiftUI
 
 final class DestiniView: BaseView {
     var answerButtonPressed: ((Int) -> Void)? = nil
-    
+    let scrollView = UIScrollView()
     let storyLabel = UILabel().then {
         $0.text = "You see a fork in the road."
         $0.textColor = .white
@@ -35,13 +35,20 @@ extension DestiniView {
     override func setupViews() {
         super.setupViews()
         addView(stack)
-        stack.addArrangedSubview(storyLabel)
+        stack.addArrangedSubview(scrollView)
+        scrollView.addView(storyLabel)
         configureButtons()
     }
     
     override func layoutViews() {
         super.layoutViews()
         NSLayoutConstraint.activate([
+            storyLabel.topAnchor.constraint(equalTo: scrollView.contentLayoutGuide.topAnchor),
+            storyLabel.leadingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.leadingAnchor),
+            storyLabel.trailingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.trailingAnchor),
+            storyLabel.bottomAnchor.constraint(equalTo: scrollView.contentLayoutGuide.bottomAnchor),
+            storyLabel.widthAnchor.constraint(equalTo: stack.widthAnchor),
+            
             stack.topAnchor.constraint(equalToSystemSpacingBelow: topAnchor, multiplier: 2),
             stack.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor,
                                            multiplier: 2),
@@ -68,7 +75,7 @@ extension DestiniView {
             config.title = ["Take a left.", "Take a right."][i]
             config.titleTextAttributesTransformer = UIConfigurationTextAttributesTransformer { incoming in
               var outgoing = incoming
-              outgoing.font = UIFont.preferredFont(forTextStyle: .title1)
+                outgoing.font = UIFont.preferredFont(forTextStyle: .body)
               return outgoing
             }
             config.baseForegroundColor = .white

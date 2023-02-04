@@ -1,7 +1,11 @@
 import SwiftUI
 
 class ViewController: BaseController {
-    let storyBrain = StoryBrain()
+    var storyBrain = StoryBrain() {
+        didSet {
+            updateUI()
+        }
+    }
     let destiniView = DestiniView()
     
     lazy var storyLabel = destiniView.storyLabel
@@ -12,7 +16,7 @@ class ViewController: BaseController {
     }
     
     func answerButtonPressed(_ index: Int) {
-        print(index)
+        storyBrain.nextStory(index)
     }
     
     func updateUI() {

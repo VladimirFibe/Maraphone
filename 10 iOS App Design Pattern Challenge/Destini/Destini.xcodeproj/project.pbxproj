@@ -25,6 +25,8 @@
 		02B12DD3298D303C00ED65FC /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 02B12DD2298D303C00ED65FC /* 2.png */; };
 		02B12DD5298D30CA00ED65FC /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B12DD4298D30CA00ED65FC /* Story.swift */; };
 		02B12DD7298D318A00ED65FC /* StoryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B12DD6298D318A00ED65FC /* StoryBrain.swift */; };
+		02B12DD9298D41C600ED65FC /* Story.json in Resources */ = {isa = PBXBuildFile; fileRef = 02B12DD8298D41C600ED65FC /* Story.json */; };
+		02BC7D8E298D53B500C8DD3F /* sample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02BC7D8D298D53B500C8DD3F /* sample.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		02B12DD2298D303C00ED65FC /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		02B12DD4298D30CA00ED65FC /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		02B12DD6298D318A00ED65FC /* StoryBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBrain.swift; sourceTree = "<group>"; };
+		02B12DD8298D41C600ED65FC /* Story.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Story.json; sourceTree = "<group>"; };
+		02BC7D8D298D53B500C8DD3F /* sample.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 				02B12DAE298D178B00ED65FC /* ViewController.swift */,
 				02B12DD0298D2AA200ED65FC /* DestiniView.swift */,
 				02B12DD4298D30CA00ED65FC /* Story.swift */,
+				02B12DD8298D41C600ED65FC /* Story.json */,
 				02B12DD6298D318A00ED65FC /* StoryBrain.swift */,
 				02B12DCE298D26E000ED65FC /* ViewControllerRepresentable.swift */,
 				02B12DB0298D178B00ED65FC /* Main.storyboard */,
@@ -95,6 +100,7 @@
 				02B12DCA298D25DC00ED65FC /* Then.swift */,
 				02B12DC8298D25D200ED65FC /* BaseController.swift */,
 				02B12DC6298D25C300ED65FC /* BaseView.swift */,
+				02BC7D8D298D53B500C8DD3F /* sample.mp3 */,
 				02B12DB3298D178C00ED65FC /* Assets.xcassets */,
 				02B12DB5298D178C00ED65FC /* LaunchScreen.storyboard */,
 				02B12DB8298D178C00ED65FC /* Info.plist */,
@@ -173,7 +179,9 @@
 			files = (
 				02B12DB7298D178C00ED65FC /* LaunchScreen.storyboard in Resources */,
 				02B12DC5298D180800ED65FC /* readme-end-banner.png in Resources */,
+				02BC7D8E298D53B500C8DD3F /* sample.mp3 in Resources */,
 				02B12DD3298D303C00ED65FC /* 2.png in Resources */,
+				02B12DD9298D41C600ED65FC /* Story.json in Resources */,
 				02B12DB4298D178C00ED65FC /* Assets.xcassets in Resources */,
 				02B12DC1298D17ED00ED65FC /* 1.gif in Resources */,
 				02B12DC4298D180800ED65FC /* AppBreweryBanner.png in Resources */,
