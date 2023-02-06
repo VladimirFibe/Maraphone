@@ -11,7 +11,6 @@ struct Question: Decodable {
             do {
                 let data = try Data(contentsOf: url)
                 let dataAsString = String(data: data, encoding: .utf8) ?? ""
-                print("DEBUG: \(dataAsString)")
                 let decoder = JSONDecoder()
                 let questions = try decoder.decode([Question].self,
                                                    from: data)
@@ -41,23 +40,5 @@ struct Question: Decodable {
 
 
 
-extension URLSession {
-  func fetchData(at url: URL, completion: @escaping (Result<[Question], Error>) -> Void) {
-    self.dataTask(with: url) { (data, response, error) in
-      if let error = error {
-        completion(.failure(error))
-      }
-
-      if let data = data {
-        do {
-          let questions = try JSONDecoder().decode([Question].self, from: data)
-          completion(.success(questions))
-        } catch let decoderError {
-          completion(.failure(decoderError))
-        }
-      }
-    }.resume()
-  }
-}
 
 

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Lucky" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="answerButtons" destination="Ky0-Ax-kSI" collectionClass="NSMutableArray" id="G1F-nQ-4hu"/>
+                <outletCollection property="answerButtons" destination="B25-4a-xiK" collectionClass="NSMutableArray" id="QnO-YI-os6"/>
+                <outletCollection property="answerButtons" destination="P04-HC-TR0" collectionClass="NSMutableArray" id="BKa-Ih-Uus"/>
+                <outletCollection property="answerButtons" destination="ppI-V9-Ek5" collectionClass="NSMutableArray" id="RSg-WE-of9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="O8I-FW-vI2">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="V7d-In-Rhj">
+                    <rect key="frame" x="42" y="266" width="141" height="320"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Ky0-Ax-kSI">
+                            <rect key="frame" x="0.0" y="0.0" width="141" height="76.333333333333329"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button" image="a.circle" catalog="system" backgroundImage="answerButton"/>
+                            <buttonConfiguration key="configuration" style="plain" image="a.circle" catalog="system" title="a" titleAlignment="trailing">
+                                <backgroundConfiguration key="background" image="answerButton"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="answersTapped:" destination="-1" eventType="touchUpInside" id="hAm-RQ-erq"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="B25-4a-xiK">
+                            <rect key="frame" x="0.0" y="81.333333333333343" width="141" height="76.333333333333343"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button" image="a.circle" catalog="system" backgroundImage="answerButton"/>
+                            <buttonConfiguration key="configuration" style="plain" image="b.circle" catalog="system" title="b" titleAlignment="trailing">
+                                <backgroundConfiguration key="background" image="answerButton"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="answersTapped:" destination="-1" eventType="touchUpInside" id="wHk-k8-91L"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="P04-HC-TR0">
+                            <rect key="frame" x="0.0" y="162.66666666666666" width="141" height="76"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button" image="a.circle" catalog="system" backgroundImage="answerButton"/>
+                            <buttonConfiguration key="configuration" style="plain" image="c.circle" catalog="system" title="c" titleAlignment="trailing">
+                                <backgroundConfiguration key="background" image="answerButton"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="answersTapped:" destination="-1" eventType="touchUpInside" id="rRc-8l-EYc"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="ppI-V9-Ek5">
+                            <rect key="frame" x="0.0" y="243.66666666666666" width="141" height="76.333333333333343"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button" image="a.circle" catalog="system" backgroundImage="answerButton"/>
+                            <buttonConfiguration key="configuration" style="plain" image="d.circle" catalog="system" title="d" titleAlignment="trailing">
+                                <backgroundConfiguration key="background" image="answerButton"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="answersTapped:" destination="-1" eventType="touchUpInside" id="KQE-GH-NOa"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="320" id="81u-WN-IBj"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="O8I-FW-vI2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DA3-08-gu1"/>
+                <constraint firstAttribute="bottom" secondItem="O8I-FW-vI2" secondAttribute="bottom" id="DU2-Ds-6G2"/>
+                <constraint firstItem="O8I-FW-vI2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="FpC-6b-hfO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="O8I-FW-vI2" secondAttribute="trailing" id="J9P-9j-J6l"/>
+                <constraint firstItem="V7d-In-Rhj" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Nkr-Fj-vxv"/>
+                <constraint firstItem="V7d-In-Rhj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="42" id="Tgw-Dc-peG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="V7d-In-Rhj" secondAttribute="trailing" constant="42" id="vXL-6t-7q3"/>
+            </constraints>
+            <point key="canvasLocation" x="109" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="a.circle" catalog="system" width="128" height="123"/>
+        <image name="answerButton" width="340" height="72"/>
+        <image name="b.circle" catalog="system" width="128" height="123"/>
+        <image name="background" width="414" height="736"/>
+        <image name="c.circle" catalog="system" width="128" height="123"/>
+        <image name="d.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

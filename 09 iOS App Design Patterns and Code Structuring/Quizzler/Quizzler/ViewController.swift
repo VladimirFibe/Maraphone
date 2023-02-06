@@ -57,6 +57,15 @@ extension ViewController {
         view.backgroundColor = Res.Color.background
         quizzlerView.answerButtonPressed = answerButtonPressed
         updateUI()
+        guard let url = URL(string: "https://raw.githubusercontent.com/VladimirFibe/Maraphone/main/09%20iOS%20App%20Design%20Patterns%20and%20Code%20Structuring/Quizzler/Quizzler/Questions.json") else { return }
+        URLSession.shared.fetchData(at: url) { result in
+            switch result {
+            case .success(let questions):
+                questions.forEach { print($0.text)}
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
 }
 
@@ -67,3 +76,21 @@ struct ViewControllerRepresentable_Previews: PreviewProvider {
     }
 }
 
+extension URLSession {
+  func fetchData(at url: URL, completion: @escaping (Result<[Question], Error>) -> Void) {
+    self.dataTask(with: url) { (data, response, error) in
+      if let error = error {
+        completion(.failure(error))
+      }
+
+      if let data = data {
+        do {
+          let questions = try JSONDecoder().decode([Question].self, from: data)
+          completion(.success(questions))
+        } catch let decoderError {
+          completion(.failure(decoderError))
+        }
+      }
+    }.resume()
+  }
+}
